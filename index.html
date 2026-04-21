@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>学習院メモポータル</title>
-  <meta name="description" content="学習院大学生向けの非公式ポータル。G-Port、LMS、時間割、課題、メモをひとつにまとめた。">
+  <meta name="description" content="学習院大学生向けの非公式ポータル。G-Port、LMS、キャンパスマップ、時間割、課題、メモをひとつにまとめた。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -17,11 +17,10 @@
       --sub:#697483;
       --navy:#1f3a5f;
       --navy-soft:#edf3fb;
-      --blue:#2d6cdf;
       --red:#cb5a5a;
       --yellow:#c28b2c;
       --green:#2d8f60;
-      --shadow:0 10px 24px rgba(15, 35, 60, 0.06);
+      --shadow:0 10px 24px rgba(15,35,60,.06);
       --radius:18px;
     }
     *{box-sizing:border-box}
@@ -30,428 +29,150 @@
       margin:0;
       font-family:"Noto Sans JP",sans-serif;
       color:var(--text);
-      background:
-        linear-gradient(180deg,#eef2f7 0,#f7f8fa 180px,var(--bg) 180px);
+      background:linear-gradient(180deg,#eef2f7 0,#f7f8fa 180px,var(--bg) 180px);
     }
     a{color:inherit;text-decoration:none}
     button,input,textarea,select{font:inherit}
     button{cursor:pointer}
     .container{width:min(1140px,calc(100% - 28px));margin:0 auto}
-    .topline{
-      font-size:.87rem;color:var(--sub);
-      padding:12px 0 0;
-      display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap
-    }
-    .site-head{
-      margin-top:12px;
-      background:var(--paper);
-      border:1px solid var(--line);
-      border-radius:24px;
-      box-shadow:var(--shadow);
-      overflow:hidden;
-    }
-    .site-head-inner{
-      display:grid;
-      grid-template-columns:1.2fr .8fr;
-      gap:0;
-    }
-    .brand-col{
-      padding:28px 28px 24px;
-      border-right:1px solid var(--line);
-    }
+    .topline{font-size:.87rem;color:var(--sub);padding:12px 0 0;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    .site-head{margin-top:12px;background:var(--paper);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);overflow:hidden}
+    .site-head-inner{display:grid;grid-template-columns:1.2fr .8fr}
+    .brand-col{padding:28px 28px 24px;border-right:1px solid var(--line)}
     .brand-row{display:flex;align-items:flex-start;gap:16px}
-    .logo{
-      width:62px;height:62px;border-radius:16px;
-      background:var(--navy);color:#fff;
-      display:grid;place-items:center;
-      font-weight:800;font-size:1.2rem;letter-spacing:.04em;
-    }
-    h1{
-      margin:0;
-      font-size:1.9rem;
-      letter-spacing:.01em;
-    }
+    .logo{width:62px;height:62px;border-radius:16px;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:800;font-size:1.2rem;letter-spacing:.04em}
+    h1{margin:0;font-size:1.9rem;letter-spacing:.01em}
     .muted{color:var(--sub)}
-    .intro{
-      margin:16px 0 0;
-      line-height:1.85;
-      color:#495363;
-      max-width:56ch;
-      font-size:.98rem;
-    }
+    .intro{margin:16px 0 0;line-height:1.85;color:#495363;max-width:56ch;font-size:.98rem}
     .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
-    .btn{
-      border-radius:12px;
-      min-height:44px;
-      padding:0 16px;
-      border:1px solid var(--line);
-      background:#fff;
-      color:var(--text);
-      font-weight:700;
-    }
-    .btn.primary{
-      background:var(--navy);
-      border-color:var(--navy);
-      color:#fff;
-    }
+    .btn{border-radius:12px;min-height:44px;padding:0 16px;border:1px solid var(--line);background:#fff;color:var(--text);font-weight:700}
+    .btn.primary{background:var(--navy);border-color:var(--navy);color:#fff}
     .btn.ghost{background:#fff}
-    .quick-notes{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:12px;
-      margin-top:22px;
-    }
-    .chip-box{
-      background:#fafbfc;border:1px solid var(--line);
-      border-radius:14px;padding:12px 14px;
-    }
+    .quick-notes{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}
+    .chip-box{background:#fafbfc;border:1px solid var(--line);border-radius:14px;padding:12px 14px}
     .chip-box strong{display:block;font-size:.95rem}
     .chip-box span{display:block;margin-top:4px;font-size:.84rem;color:var(--sub)}
-    .status-col{
-      padding:24px 24px 20px;
-      background:#fbfcfe;
-    }
-    .status-grid{
-      display:grid;
-      gap:12px;
-    }
-    .status-card{
-      border:1px solid var(--line);
-      background:#fff;
-      border-radius:16px;
-      padding:15px 16px;
-    }
-    .status-card .label{
-      font-size:.82rem;color:var(--sub)
-    }
-    .status-card strong{
-      display:block;
-      font-size:1.15rem;
-      margin-top:7px;
-    }
+    .status-col{padding:24px 24px 20px;background:#fbfcfe}
+    .status-grid{display:grid;gap:12px}
+    .status-card{border:1px solid var(--line);background:#fff;border-radius:16px;padding:15px 16px}
+    .status-card .label{font-size:.82rem;color:var(--sub)}
+    .status-card strong{display:block;font-size:1.15rem;margin-top:7px}
     .status-card small{display:block;margin-top:6px;color:var(--sub)}
-    .nav{
-      display:flex;gap:18px;flex-wrap:wrap;
-      padding:14px 24px;
-      border-top:1px solid var(--line);
-      background:#fafbfc;
-      font-size:.95rem;
-    }
+    .nav{display:flex;gap:18px;flex-wrap:wrap;padding:14px 24px;border-top:1px solid var(--line);background:#fafbfc;font-size:.95rem}
     .nav a{color:#445062}
-    .layout{
-      display:grid;
-      grid-template-columns:320px minmax(0,1fr);
-      gap:18px;
-      margin-top:18px;
-      align-items:start;
-    }
-    .sidebar{
-      position:sticky;
-      top:12px;
-      display:grid;
-      gap:16px;
-    }
-    .panel{
-      background:var(--paper);
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      padding:18px;
-    }
-    .panel h2,.panel h3,.panel h4{margin:0}
-    .panel-title{
-      display:flex;align-items:center;justify-content:space-between;gap:10px;
-      margin-bottom:14px;
-    }
-    .panel-title h2,.panel-title h3{
-      font-size:1.02rem;
-    }
-    .tiny{
-      font-size:.82rem;color:var(--sub)
-    }
+    .layout{display:grid;grid-template-columns:320px minmax(0,1fr);gap:18px;margin-top:18px;align-items:start}
+    .sidebar{position:sticky;top:12px;display:grid;gap:16px}
+    .panel,.section{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .panel{padding:18px}
+    .main{display:grid;gap:18px}
+    .section{padding:22px}
+    .panel h2,.panel h3,.panel h4,.section h2{margin:0}
+    .panel-title,.section-head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    .panel-title{align-items:center;margin-bottom:14px}
+    .panel-title h2,.panel-title h3{font-size:1.02rem}
+    .section-head{align-items:end;margin-bottom:16px}
+    .section-head h2{font-size:1.3rem}
+    .section-head p{margin:6px 0 0;color:var(--sub);font-size:.92rem}
+    .tiny{font-size:.82rem;color:var(--sub)}
     .today-list,.task-list,.link-grid,.guide-grid{display:grid;gap:12px}
-    .schedule-item{
-      border:1px solid var(--line);
-      border-radius:14px;
-      padding:12px 13px;
-      background:#fff;
-      display:grid;
-      grid-template-columns:80px 1fr;
-      gap:12px;
-    }
-    .schedule-item.current{
-      background:var(--navy-soft);
-      border-color:#b5c9ea;
-    }
-    .period{
-      font-weight:800;color:var(--navy)
-    }
-    .period small{
-      display:block;font-weight:500;color:var(--sub);margin-top:3px
-    }
+    .schedule-item{border:1px solid var(--line);border-radius:14px;padding:12px 13px;background:#fff;display:grid;grid-template-columns:80px 1fr;gap:12px}
+    .schedule-item.current{background:var(--navy-soft);border-color:#b5c9ea}
+    .period{font-weight:800;color:var(--navy)}
+    .period small{display:block;font-weight:500;color:var(--sub);margin-top:3px}
     .course-title{font-weight:700}
     .course-meta,.item-sub{margin-top:4px;color:var(--sub);font-size:.9rem;line-height:1.6}
-    .simple-links{
-      display:grid;grid-template-columns:1fr 1fr;gap:10px
-    }
-    .simple-link{
-      border:1px solid var(--line);
-      background:#fff;
-      border-radius:12px;
-      min-height:48px;
-      display:flex;align-items:center;justify-content:center;
-      font-weight:700;
-    }
-    .main{
-      display:grid;
-      gap:18px;
-    }
-    .section{
-      background:var(--paper);
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      padding:22px;
-    }
-    .section-head{
-      display:flex;align-items:end;justify-content:space-between;gap:12px;flex-wrap:wrap;
-      margin-bottom:16px;
-    }
-    .section-head h2{
-      font-size:1.3rem;
-      margin:0;
-    }
-    .section-head p{
-      margin:6px 0 0;color:var(--sub);font-size:.92rem
-    }
-    .search{
-      width:min(360px,100%);
-      min-height:44px;
-      border-radius:12px;
-      border:1px solid var(--line);
-      padding:0 14px;
-      background:#fff;
-    }
-    .favorites{
-      border:1px dashed var(--line);
-      background:#fafbfd;
-      border-radius:14px;
-      padding:13px;
-      margin-bottom:14px;
-      min-height:60px;
-      display:flex;gap:10px;flex-wrap:wrap;align-items:center;
-    }
-    .fav-link{
-      padding:10px 12px;border-radius:999px;
-      background:#fff;border:1px solid var(--line);font-size:.92rem
-    }
+    .simple-links{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .simple-link{border:1px solid var(--line);background:#fff;border-radius:12px;min-height:48px;display:flex;align-items:center;justify-content:center;font-weight:700}
+    .search{width:min(360px,100%);min-height:44px;border-radius:12px;border:1px solid var(--line);padding:0 14px;background:#fff}
+    .favorites{border:1px dashed var(--line);background:#fafbfd;border-radius:14px;padding:13px;margin-bottom:14px;min-height:60px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+    .fav-link{padding:10px 12px;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:.92rem}
     .filters{display:flex;gap:10px;flex-wrap:wrap}
-    .filter-btn,.fav-btn,.mini-btn{
-      min-height:38px;padding:0 12px;border-radius:10px;
-      border:1px solid var(--line);background:#fff;color:var(--text)
-    }
+    .filter-btn,.fav-btn,.mini-btn{min-height:38px;padding:0 12px;border-radius:10px;border:1px solid var(--line);background:#fff;color:var(--text)}
     .filter-btn.active{background:var(--navy);border-color:var(--navy);color:#fff}
-    .link-grid{
-      grid-template-columns:repeat(2,minmax(0,1fr));
-    }
-    .link-card{
-      border:1px solid var(--line);
-      border-radius:16px;
-      padding:15px;
-      background:#fff;
-      display:flex;flex-direction:column;gap:10px;
-      min-height:180px;
-    }
+    .link-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .link-card{border:1px solid var(--line);border-radius:16px;padding:15px;background:#fff;display:flex;flex-direction:column;gap:10px;min-height:180px}
     .link-top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
     .link-top h3{font-size:1rem;margin:0}
-    .pill{
-      display:inline-flex;align-items:center;
-      border-radius:999px;padding:5px 9px;
-      background:#f3f5f8;border:1px solid var(--line);
-      color:#566274;font-size:.8rem
-    }
+    .pill{display:inline-flex;align-items:center;border-radius:999px;padding:5px 9px;background:#f3f5f8;border:1px solid var(--line);color:#566274;font-size:.8rem}
     .tags{display:flex;gap:8px;flex-wrap:wrap}
-    .tag{
-      font-size:.8rem;color:#667388;
-      padding:5px 8px;border-radius:999px;background:#f7f8fb;border:1px solid #e3e7ee
-    }
-    .link-open{
-      margin-top:auto;
-      border:1px solid var(--navy);
-      color:var(--navy);
-      border-radius:11px;
-      min-height:42px;
-      display:flex;align-items:center;justify-content:center;
-      font-weight:700;
-      background:#fff;
-    }
-    .link-open:hover,.simple-link:hover,.btn:hover,.mini-btn:hover,.fav-btn:hover{filter:brightness(.98)}
+    .tag{font-size:.8rem;color:#667388;padding:5px 8px;border-radius:999px;background:#f7f8fb;border:1px solid #e3e7ee}
+    .link-open,.map-action{margin-top:auto;border:1px solid var(--navy);color:var(--navy);border-radius:11px;min-height:42px;display:flex;align-items:center;justify-content:center;font-weight:700;background:#fff}
     .table-wrap{overflow:auto;border:1px solid var(--line);border-radius:16px}
-    table{
-      width:100%;
-      min-width:860px;
-      border-collapse:collapse;
-      background:#fff;
-    }
+    table{width:100%;min-width:860px;border-collapse:collapse;background:#fff}
     th,td{border-bottom:1px solid var(--line);border-right:1px solid var(--line);vertical-align:top}
     th:last-child,td:last-child{border-right:none}
-    th{
-      background:#f6f8fb;
-      padding:13px 10px;
-      font-size:.92rem;
-    }
-    td.timecell{
-      width:110px;padding:12px 10px;background:#fcfdff
-    }
+    th{background:#f6f8fb;padding:13px 10px;font-size:.92rem}
+    td.timecell{width:110px;padding:12px 10px;background:#fcfdff}
     td.timecell strong{display:block}
     td.timecell span{font-size:.84rem;color:var(--sub)}
-    td textarea{
-      width:100%;
-      min-height:96px;
-      border:none;
-      resize:vertical;
-      padding:12px;
-      outline:none;
-      background:transparent;
-      color:var(--text);
-      line-height:1.55;
-    }
+    td textarea{width:100%;min-height:96px;border:none;resize:vertical;padding:12px;outline:none;background:transparent;color:var(--text);line-height:1.55}
     .save-row{display:flex;gap:10px;flex-wrap:wrap}
-    .tasks-wrap{
-      display:grid;
-      grid-template-columns:minmax(0,1fr);
-      gap:20px;
-      align-items:start;
-    }
-    .task-list-pane{
-      display:grid;
-      gap:14px;
-      align-content:start;
-      padding-top:2px;
-    }
-    .form-grid{
-      display:grid;
-      grid-template-columns:repeat(2,minmax(0,1fr));
-      gap:12px;
-    }
+    .tasks-wrap{display:grid;grid-template-columns:minmax(0,1fr);gap:20px;align-items:start}
+    .task-list-pane{display:grid;gap:14px;align-content:start;padding-top:2px}
+    .form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
     .form-grid label{display:grid;gap:7px}
-    .form-grid input,.form-grid textarea,.form-grid select{
-      border:1px solid var(--line);
-      border-radius:12px;
-      padding:12px 13px;
-      background:#fff;
-      color:var(--text);
-    }
+    .form-grid input,.form-grid textarea,.form-grid select{border:1px solid var(--line);border-radius:12px;padding:12px 13px;background:#fff;color:var(--text)}
     .form-grid .full{grid-column:1/-1}
     .stats{display:flex;gap:10px;flex-wrap:wrap;margin:0}
-    .stat{
-      padding:8px 11px;border-radius:999px;background:#f3f6fa;border:1px solid var(--line);font-size:.86rem
-    }
-    .task-item{
-      border:1px solid var(--line);
-      border-radius:15px;
-      padding:14px;
-      background:#fff;
-    }
-    .task-top,.task-actions,.task-meta{
-      display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap
-    }
+    .stat{padding:8px 11px;border-radius:999px;background:#f3f6fa;border:1px solid var(--line);font-size:.86rem}
+    .task-item{border:1px solid var(--line);border-radius:15px;padding:14px;background:#fff}
+    .task-top,.task-actions,.task-meta{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
     .task-top h3{margin:0;font-size:1rem}
     .priority.high{color:var(--red)}
     .priority.medium{color:var(--yellow)}
     .priority.low{color:var(--green)}
     .state.done{color:var(--green)}
     .state.open{color:var(--navy)}
-    .task-note{
-      margin-top:10px;
-      color:#4f5968;
-      white-space:pre-wrap;
-      line-height:1.7;
-    }
-    .memo-box{
-      min-height:240px;
-      width:100%;
-      border:1px solid var(--line);
-      border-radius:14px;
-      padding:14px;
-      resize:vertical;
-      line-height:1.8;
-      background:#fffefc;
-    }
+    .task-note{margin-top:10px;color:#4f5968;white-space:pre-wrap;line-height:1.7}
+    .campus-layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:16px;align-items:start}
+    .map-frame{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff}
+    .map-frame iframe{display:block;width:100%;height:560px;border:0;background:#fff}
+    .map-side{display:grid;gap:12px}
+    .map-note{border:1px solid var(--line);border-radius:14px;padding:14px;background:#fafbfd;color:#4f5968;line-height:1.75}
+    .map-note strong{display:block;color:var(--text);margin-bottom:6px}
+    .map-actions{display:grid;gap:10px}
+    .memo-box{min-height:240px;width:100%;border:1px solid var(--line);border-radius:14px;padding:14px;resize:vertical;line-height:1.8;background:#fffefc}
     .memo-status{margin-top:10px;color:var(--sub);font-size:.88rem}
-    .guide-grid{
-      grid-template-columns:repeat(3,minmax(0,1fr));
-    }
-    .guide-card{
-      border:1px solid var(--line);
-      border-radius:15px;
-      padding:16px;
-      background:#fff;
-    }
-    .guide-card b{
-      display:inline-grid;place-items:center;
-      width:34px;height:34px;border-radius:10px;
-      background:var(--navy);color:#fff;margin-bottom:10px;
-    }
+    .guide-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .guide-card{border:1px solid var(--line);border-radius:15px;padding:16px;background:#fff}
+    .guide-card b{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--navy);color:#fff;margin-bottom:10px}
     .guide-card p{margin:0;color:var(--sub);line-height:1.75}
-    .footer{
-      color:var(--sub);
-      font-size:.9rem;
-      padding:18px 0 40px;
-    }
-    .empty{
-      border:1px dashed var(--line);
-      border-radius:14px;
-      padding:14px;
-      color:var(--sub);
-      background:#fbfcfd;
-    }
-    .toast{
-      position:fixed;right:16px;bottom:16px;
-      padding:12px 14px;border-radius:12px;
-      background:#1f2937;color:#fff;
-      font-size:.92rem;
-      opacity:0;transform:translateY(20px);
-      transition:.2s;
-      pointer-events:none;
-    }
+    .footer{color:var(--sub);font-size:.9rem;padding:18px 0 40px}
+    .empty{border:1px dashed var(--line);border-radius:14px;padding:14px;color:var(--sub);background:#fbfcfd}
+    .toast{position:fixed;right:16px;bottom:16px;padding:12px 14px;border-radius:12px;background:#1f2937;color:#fff;font-size:.92rem;opacity:0;transform:translateY(20px);transition:.2s;pointer-events:none}
     .toast.show{opacity:1;transform:translateY(0)}
-    .mobile-nav{
-      display:none;
-    }
+    .mobile-nav{display:none}
     @media (max-width:980px){
       .site-head-inner{grid-template-columns:1fr}
       .brand-col{border-right:none;border-bottom:1px solid var(--line)}
       .layout{grid-template-columns:1fr}
       .sidebar{position:static}
-      .tasks-wrap,.guide-grid,.link-grid{grid-template-columns:1fr}
+      .guide-grid,.link-grid,.campus-layout{grid-template-columns:1fr}
       .quick-notes{grid-template-columns:1fr}
     }
     @media (max-width:820px){
       .form-grid{grid-template-columns:1fr}
+      .map-frame iframe{height:420px}
     }
     @media (max-width:720px){
       .container{width:min(100% - 18px,1140px)}
       .site-head{border-radius:18px}
       .brand-col,.status-col,.section,.panel{padding:16px}
       .hero-actions,.save-row,.filters{flex-direction:column}
-      .btn,.search,.filter-btn,.mini-btn{width:100%}
+      .btn,.search,.filter-btn,.mini-btn,.map-action{width:100%}
       .simple-links{grid-template-columns:1fr 1fr}
       .nav{display:none}
       .mobile-nav{
         position:sticky;bottom:10px;z-index:20;
         width:min(100% - 18px,1140px);margin:0 auto 12px;
-        display:grid;grid-template-columns:repeat(4,1fr);gap:8px;
+        display:grid;grid-template-columns:repeat(5,1fr);gap:8px;
         background:rgba(255,255,255,.92);backdrop-filter:blur(10px);
         border:1px solid var(--line);border-radius:16px;padding:8px;
         box-shadow:var(--shadow);
       }
-      .mobile-nav a{
-        min-height:44px;border-radius:12px;
-        display:flex;align-items:center;justify-content:center;
-        font-size:.84rem;color:#4d5a6d;
-      }
+      .mobile-nav a{min-height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:.8rem;color:#4d5a6d}
       .simple-links{gap:8px}
+      .map-frame iframe{height:360px}
     }
   </style>
 </head>
@@ -475,13 +196,13 @@
           </div>
 
           <p class="intro">
-            開いたときに最初に見たいものだけを上に置いている。  
-            G-PortやLMSにすぐ飛べて、時間割と課題も同じ場所で見られるようにしてある。
+            開いたときに最初に見たいものだけを上に置いている。<br>
+            G-PortやLMSにすぐ飛べて、キャンパスマップ、時間割、課題も同じ場所で見られるようにしてある。
           </p>
 
           <div class="hero-actions">
             <a class="btn primary" href="#links">公式リンクを見る</a>
-            <a class="btn ghost" href="#assignments">課題を追加する</a>
+            <a class="btn ghost" href="#campus-map">キャンパスマップを見る</a>
           </div>
 
           <div class="quick-notes">
@@ -495,7 +216,7 @@
             </div>
             <div class="chip-box">
               <strong>日常用</strong>
-              <span>課題メモ / 図書館 / 証明書</span>
+              <span>キャンパスマップ / 課題 / 図書館</span>
             </div>
           </div>
         </div>
@@ -524,6 +245,7 @@
       <nav class="nav">
         <a href="#dashboard">今日の欄</a>
         <a href="#links">公式リンク</a>
+        <a href="#campus-map">キャンパスマップ</a>
         <a href="#timetable">時間割</a>
         <a href="#assignments">課題</a>
         <a href="#memo">メモ</a>
@@ -576,6 +298,39 @@
           <div class="favorites" id="favoriteLinks">まだ固定したリンクはありません。</div>
           <div class="filters" id="categoryFilters"></div>
           <div class="link-grid" id="linkGrid"></div>
+        </section>
+
+        <section class="section" id="campus-map">
+          <div class="section-head">
+            <div>
+              <h2>キャンパスマップ</h2>
+              <p>学習院大学の目白キャンパスの地図をここから見られるようにした。</p>
+            </div>
+          </div>
+
+          <div class="campus-layout">
+            <div class="map-frame">
+              <iframe
+                src="https://www.gakushuin.ac.jp/m_map/index2.html"
+                title="学習院 目白キャンパス キャンパスマップ"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+
+            <div class="map-side">
+              <div class="map-note">
+                <strong>使い方</strong>
+                ページ内で見づらいときは、右のボタンから公式ページをそのまま開ける。<br>
+                駅からの行き方や住所もすぐ確認できるようにしてある。
+              </div>
+              <div class="map-actions">
+                <a class="map-action" href="https://www.gakushuin.ac.jp/m_map/index2.html" target="_blank" rel="noopener noreferrer">キャンパスマップを開く</a>
+                <a class="map-action" href="https://www.univ.gakushuin.ac.jp/access/" target="_blank" rel="noopener noreferrer">アクセス情報を見る</a>
+                <a class="map-action" href="https://www.gakushuin.ac.jp/houjin/kikaku/index.html" target="_blank" rel="noopener noreferrer">学習院全体のアクセスマップ</a>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section class="section" id="timetable">
@@ -703,7 +458,7 @@
             </div>
             <div class="guide-card">
               <b>3</b>
-              <p>課題を締切順に入れておく。近いものだけ自動で上に来る。</p>
+              <p>キャンパスマップと課題を入れておくと、移動と締切確認が同じ場所で済む。</p>
             </div>
           </div>
         </section>
@@ -713,6 +468,7 @@
     <div class="mobile-nav">
       <a href="#dashboard">今日</a>
       <a href="#links">リンク</a>
+      <a href="#campus-map">地図</a>
       <a href="#timetable">時間割</a>
       <a href="#assignments">課題</a>
     </div>
@@ -760,9 +516,7 @@
     const $ = (selector) => document.querySelector(selector);
     const $$ = (selector) => [...document.querySelectorAll(selector)];
 
-    function save(key, value){
-      localStorage.setItem(key, JSON.stringify(value));
-    }
+    function save(key, value){ localStorage.setItem(key, JSON.stringify(value)); }
     function load(key, fallback){
       try{
         const raw = localStorage.getItem(key);
@@ -795,29 +549,19 @@
       });
       return base;
     }
-
     function getTodayInfo(){
       const now = new Date();
       const jpDays = ["日","月","火","水","木","金","土"];
       const day = jpDays[now.getDay()];
-      return {
-        date: now,
-        day,
-        minutes: now.getHours() * 60 + now.getMinutes(),
-        isClassDay: DAYS.includes(day)
-      };
+      return { date: now, day, minutes: now.getHours() * 60 + now.getMinutes(), isClassDay: DAYS.includes(day) };
     }
-
     function parseRange(timeText){
       const [start, end] = timeText.split("-");
       const [sh, sm] = start.split(":").map(Number);
       const [eh, em] = end.split(":").map(Number);
       return [sh * 60 + sm, eh * 60 + em];
     }
-
-    function loadTimetable(){
-      return load(STORE.timetable, defaultTimetable());
-    }
+    function loadTimetable(){ return load(STORE.timetable, defaultTimetable()); }
 
     function renderClock(){
       const info = getTodayInfo();
@@ -850,9 +594,7 @@
 
     function saveTimetable(){
       const next = defaultTimetable();
-      $$("#timetableBody textarea").forEach(area=>{
-        next[area.dataset.day][area.dataset.period] = area.value.trim();
-      });
+      $$("#timetableBody textarea").forEach(area=>{ next[area.dataset.day][area.dataset.period] = area.value.trim(); });
       save(STORE.timetable, next);
       renderTodayArea();
       toast("時間割を保存しました");
@@ -872,10 +614,7 @@
       const data = loadTimetable();
       return PERIODS.map(([key,label,time])=>{
         const [start,end] = parseRange(time);
-        return {
-          key, label, time, start, end,
-          value: (data[info.day][key] || "").trim()
-        };
+        return { key, label, time, start, end, value:(data[info.day][key] || "").trim() };
       }).filter(item => item.value);
     }
 
@@ -900,7 +639,6 @@
       }
 
       const nextClass = classes.find(item => info.minutes < item.end);
-
       classes.forEach(item=>{
         const lines = item.value.split("\n").filter(Boolean);
         const title = lines[0] || item.value;
@@ -927,15 +665,9 @@
       }
     }
 
-    function loadTasks(){
-      return load(STORE.tasks, []);
-    }
-    function saveTasks(tasks){
-      save(STORE.tasks, tasks);
-    }
-    function sortTasks(tasks){
-      return [...tasks].sort((a,b)=> new Date(a.due) - new Date(b.due));
-    }
+    function loadTasks(){ return load(STORE.tasks, []); }
+    function saveTasks(tasks){ save(STORE.tasks, tasks); }
+    function sortTasks(tasks){ return [...tasks].sort((a,b)=> new Date(a.due) - new Date(b.due)); }
     function dueText(dateText){
       const diff = new Date(dateText) - Date.now();
       const hour = 1000 * 60 * 60;
@@ -948,9 +680,7 @@
       const d = new Date(dateText);
       return d.toLocaleString("ja-JP",{month:"numeric",day:"numeric",hour:"2-digit",minute:"2-digit"});
     }
-    function taskFilter(){
-      return localStorage.getItem(STORE.taskFilter) || "all";
-    }
+    function taskFilter(){ return localStorage.getItem(STORE.taskFilter) || "all"; }
 
     function renderTaskSidebar(allTasks){
       const box = $("#sidebarTasks");
@@ -1000,9 +730,7 @@
       renderTaskStats(all);
 
       const currentFilter = taskFilter();
-      $$(".filter-btn[data-filter]").forEach(btn=>{
-        btn.classList.toggle("active", btn.dataset.filter === currentFilter);
-      });
+      $$(".filter-btn[data-filter]").forEach(btn=>{ btn.classList.toggle("active", btn.dataset.filter === currentFilter); });
 
       const target = $("#taskList");
       target.innerHTML = "";
@@ -1055,11 +783,7 @@
       if(!title || !due) return;
 
       const tasks = loadTasks();
-      tasks.push({
-        id: String(Date.now() + Math.random()),
-        title, course, due, priority, memo,
-        done:false
-      });
+      tasks.push({ id:String(Date.now() + Math.random()), title, course, due, priority, memo, done:false });
       saveTasks(tasks);
       $("#taskForm").reset();
       renderTasks();
@@ -1068,40 +792,29 @@
 
     function toggleTask(id){
       const next = loadTasks().map(task => task.id === id ? {...task, done: !task.done} : task);
-      save(STORE.tasks, next);
+      saveTasks(next);
       renderTasks();
     }
-
     function deleteTask(id){
       if(!confirm("この課題を削除しますか？")) return;
       saveTasks(loadTasks().filter(task => task.id !== id));
       renderTasks();
       toast("課題を削除しました");
     }
-
     function clearDoneTasks(){
       saveTasks(loadTasks().filter(task => !task.done));
       renderTasks();
       toast("完了済みを整理しました");
     }
 
-    function favoriteIds(){
-      return load(STORE.favorites, []);
-    }
-
+    function favoriteIds(){ return load(STORE.favorites, []); }
     function toggleFavorite(id){
       const current = favoriteIds();
-      if(current.includes(id)){
-        save(STORE.favorites, current.filter(value => value !== id));
-      }else{
-        save(STORE.favorites, [...current, id]);
-      }
+      if(current.includes(id)) save(STORE.favorites, current.filter(value => value !== id));
+      else save(STORE.favorites, [...current, id]);
       renderLinks();
     }
-
-    function activeLinkCategory(){
-      return localStorage.getItem(STORE.linkFilter) || "すべて";
-    }
+    function activeLinkCategory(){ return localStorage.getItem(STORE.linkFilter) || "すべて"; }
 
     function renderLinkFilters(){
       const filters = ["すべて", ...new Set(LINKS.map(link => link.cat))];
@@ -1112,10 +825,7 @@
         button.type = "button";
         button.className = "filter-btn" + (activeLinkCategory() === filter ? " active" : "");
         button.textContent = filter;
-        button.onclick = () => {
-          localStorage.setItem(STORE.linkFilter, filter);
-          renderLinks();
-        };
+        button.onclick = () => { localStorage.setItem(STORE.linkFilter, filter); renderLinks(); };
         box.appendChild(button);
       });
     }
@@ -1135,7 +845,6 @@
 
       const grid = $("#linkGrid");
       grid.innerHTML = "";
-
       filtered.forEach(link=>{
         const article = document.createElement("article");
         article.className = "link-card";
@@ -1156,13 +865,8 @@
 
       const favoriteBox = $("#favoriteLinks");
       const favoriteLinks = LINKS.filter(link => favs.includes(link.id));
-      if(!favoriteLinks.length){
-        favoriteBox.textContent = "まだ固定したリンクはありません。";
-      }else{
-        favoriteBox.innerHTML = favoriteLinks.map(link =>
-          `<a class="fav-link" href="${link.url}" target="_blank" rel="noopener noreferrer">${escapeHtml(link.name)}</a>`
-        ).join("");
-      }
+      if(!favoriteLinks.length) favoriteBox.textContent = "まだ固定したリンクはありません。";
+      else favoriteBox.innerHTML = favoriteLinks.map(link => `<a class="fav-link" href="${link.url}" target="_blank" rel="noopener noreferrer">${escapeHtml(link.name)}</a>`).join("");
     }
 
     function loadMemo(){
@@ -1170,21 +874,14 @@
       $("#memoBox").value = memo;
       $("#memoStatus").textContent = memo ? "保存済み" : "未保存";
     }
-
     function saveMemo(){
       localStorage.setItem(STORE.memo, $("#memoBox").value);
       $("#memoStatus").textContent = `保存済み ${new Date().toLocaleTimeString("ja-JP",{hour:"2-digit",minute:"2-digit"})}`;
     }
-
     async function copyMemo(){
-      try{
-        await navigator.clipboard.writeText($("#memoBox").value);
-        toast("メモをコピーしました");
-      }catch{
-        toast("コピーできませんでした");
-      }
+      try{ await navigator.clipboard.writeText($("#memoBox").value); toast("メモをコピーしました"); }
+      catch{ toast("コピーできませんでした"); }
     }
-
     function clearMemo(){
       if(!confirm("メモを消去しますか？")) return;
       $("#memoBox").value = "";
@@ -1206,11 +903,8 @@
         const button = event.target.closest("[data-action]");
         if(!button) return;
         const id = button.dataset.id;
-        if(button.dataset.action === "toggle"){
-          toggleTask(id);
-        }else if(button.dataset.action === "delete"){
-          deleteTask(id);
-        }
+        if(button.dataset.action === "toggle") toggleTask(id);
+        else if(button.dataset.action === "delete") deleteTask(id);
       };
 
       $("#linkGrid").onclick = (event)=>{
@@ -1235,10 +929,7 @@
       renderLinks();
       loadMemo();
       bindEvents();
-      setInterval(()=>{
-        renderClock();
-        renderTodayArea();
-      }, 60000);
+      setInterval(()=>{ renderClock(); renderTodayArea(); }, 60000);
     }
 
     init();
