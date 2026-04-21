@@ -1,1 +1,1238 @@
-<!doctype html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>G-Port+ | 学習院大学生向けポータル</title><meta name='description' content='学習院大学生向けの非公式ポータル。公式リンク、時間割、課題、メモをまとめた実用サイト。'><link rel='preconnect' href='https://fonts.googleapis.com'><link rel='preconnect' href='https://fonts.gstatic.com' crossorigin><link href='https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&display=swap' rel='stylesheet'><style>:root{--bg:#0b1220;--bg2:#121c33;--panel:rgba(255,255,255,.08);--line:rgba(255,255,255,.12);--text:#edf3ff;--muted:#b7c3de;--a:#90b0ff;--b:#b08eff;--ok:#91efc2;--warn:#ffd37d;--danger:#ff95ab}body.light{--bg:#eef4ff;--bg2:#f8fbff;--panel:rgba(8,24,56,.05);--line:rgba(8,24,56,.12);--text:#10192c;--muted:#5a6787;--a:#436ce7;--b:#7a57e0}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:'Noto Sans JP',sans-serif;color:var(--text);background:radial-gradient(circle at top left,rgba(144,176,255,.18),transparent 25%),radial-gradient(circle at top right,rgba(176,142,255,.16),transparent 18%),linear-gradient(180deg,var(--bg),var(--bg2) 50%,var(--bg))}a{text-decoration:none;color:inherit}button,input,textarea,select{font:inherit}button{cursor:pointer}.c{width:min(1100px,calc(100% - 24px));margin:0 auto}.head{padding:22px 0 26px}.top{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}.brand{display:flex;align-items:center;gap:14px}.mark{width:56px;height:56px;border-radius:18px;display:grid;place-items:center;font-weight:800;background:linear-gradient(135deg,var(--a),var(--b));color:#09111f}.brand p{margin:0;color:var(--muted);font-size:.84rem}.brand h1{margin:2px 0 0;font-size:1.7rem}.theme{width:46px;height:46px;border-radius:14px;border:1px solid var(--line);background:var(--panel);color:var(--text)}.nav{display:flex;gap:14px;flex-wrap:wrap;padding:14px 16px;margin-top:18px;border:1px solid var(--line);background:var(--panel);border-radius:18px}.nav a{color:var(--muted)}.hero,.dash,.links,.guide,.two{display:grid;gap:16px}.hero{grid-template-columns:1.1fr .9fr;align-items:stretch;margin-top:24px}.copy,.card,.mini{border:1px solid var(--line);background:var(--panel);border-radius:24px;padding:22px}.ey,.tag{margin:0 0 10px;color:var(--a);font-weight:700;font-size:.88rem}.copy h2{margin:0;font-size:clamp(2rem,4vw,3rem);line-height:1.15}.lead{margin:18px 0 0;color:var(--muted);line-height:1.85}.acts,.tools,.chips,.pins,.stats,.filters,.tags{display:flex;gap:12px;flex-wrap:wrap}.acts{margin-top:22px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 18px;border-radius:14px;font-weight:700}.pri{background:linear-gradient(135deg,var(--a),var(--b));color:#08111f;border:none}.sec{background:rgba(255,255,255,.03);border:1px solid var(--line);color:var(--text)}.stack{display:grid;gap:14px}.mini strong{display:block;font-size:1.35rem;margin-top:8px}.mini span,.sub,.helper,.saved{color:var(--muted)}section{padding:16px 0 24px}.sectionhead{display:flex;justify-content:space-between;align-items:end;gap:12px;flex-wrap:wrap;margin-bottom:14px}.sectionhead h3{margin:0;font-size:1.65rem}.dash{grid-template-columns:1.4fr 1fr 1fr}.cardhead{display:flex;justify-content:space-between;align-items:start;gap:12px;margin-bottom:14px}.cardhead h4{margin:0;font-size:1.04rem}.sub{margin:5px 0 0;font-size:.92rem}.badge,.chip,.pbadge,.sbadge{display:inline-flex;align-items:center;padding:7px 11px;border-radius:999px;border:1px solid var(--line);font-size:.82rem}.schedule,.alist,.simple{display:grid;gap:12px}.simple{list-style:none;padding:0;margin:0}.simple li,.row,.item{border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.03)}.simple li{padding:14px 15px}.simple strong{display:block}.simple span{color:var(--muted);font-size:.92rem}.row{display:grid;grid-template-columns:84px 1fr;gap:14px;padding:15px}.row.current{border-color:rgba(144,176,255,.58);background:linear-gradient(135deg,rgba(144,176,255,.18),rgba(255,255,255,.04))}.time{font-weight:800;color:#d8e3ff}.row p,.item p{margin:6px 0 0;color:var(--muted)}.empty{padding:18px;border:1px dashed var(--line);border-radius:18px;color:var(--muted)}.quick{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.quick a,.pin,.open{display:flex;align-items:center;justify-content:center;min-height:48px;border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.03)}.search,input,textarea,select{background:rgba(255,255,255,.03);border:1px solid var(--line);color:var(--text);border-radius:14px;padding:14px 16px}.search::placeholder,input::placeholder,textarea::placeholder{color:#8e9bbb}.links{grid-template-columns:repeat(3,1fr)}.lcard{display:flex;flex-direction:column;gap:10px;min-height:210px}.ltop{display:flex;justify-content:space-between;gap:10px}.cat{width:fit-content;color:var(--muted)}.lcard h4{margin:0}.desc{color:var(--muted);line-height:1.72;flex:1}.tagi{padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.05);color:var(--muted);font-size:.82rem}.star{width:40px;height:40px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.03);color:var(--text)}.star.on{background:linear-gradient(135deg,#ffd37d,#ffa46b);color:#2f1800;border-color:transparent}.open{background:linear-gradient(135deg,var(--a),var(--b));color:#08111f;font-weight:700}.tablewrap{overflow:auto}.tt{width:100%;min-width:860px;border-collapse:collapse}.tt th,.tt td{border:1px solid var(--line);vertical-align:top}.tt th{padding:14px;background:rgba(255,255,255,.04)}.period{padding:14px}.period strong{display:block}.period span{font-size:.9rem;color:var(--muted)}.tt textarea{width:100%;min-height:104px;border:none;border-radius:0;background:transparent;color:var(--text);padding:14px;resize:vertical}.two{grid-template-columns:420px 1fr}.form{display:grid;grid-template-columns:1fr 1fr;gap:14px}.form label{display:grid;gap:8px}.full{grid-column:1/-1}.item{padding:16px}.itop,.iact,.meta{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}.item h5{margin:0;font-size:1.03rem}.course,.meta{color:var(--muted);font-size:.92rem}.note{white-space:pre-wrap;color:var(--muted);line-height:1.72}.pbadge.high{color:var(--danger)}.pbadge.medium{color:var(--warn)}.pbadge.low{color:var(--ok)}.sbadge.done{color:var(--ok)}.sbadge.open{color:var(--a)}.mini2{min-height:38px;padding:0 12px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.03);color:var(--text)}.memo{min-height:220px;line-height:1.8;resize:vertical}.guide{grid-template-columns:repeat(3,1fr)}.step{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;font-weight:800;background:linear-gradient(135deg,var(--a),var(--b));color:#08111f;margin-bottom:14px}.guide h4{margin:0 0 10px}.guide p{margin:0;color:var(--muted);line-height:1.8}.foot{padding:24px 0 40px;border-top:1px solid var(--line);color:var(--muted);margin-top:8px}.toast{position:fixed;right:16px;bottom:16px;background:rgba(8,14,26,.95);color:#fff;padding:14px 16px;border-radius:14px;border:1px solid rgba(255,255,255,.12);transform:translateY(120%);opacity:0;transition:.25s}.toast.show{transform:translateY(0);opacity:1}@media(max-width:980px){.hero,.dash,.links,.guide,.two{grid-template-columns:1fr 1fr}.hero{grid-template-columns:1fr}.two{grid-template-columns:1fr}}@media(max-width:760px){.nav,.sectionhead,.tools,.chips,.pins,.stats,.filters,.acts{flex-direction:column;align-items:stretch}.dash,.links,.guide,.two,.form,.quick{grid-template-columns:1fr}.search,.btn,.quick a,.pin,.open{width:100%}.row{grid-template-columns:1fr}}</style></head><body><header class='head'><div class='c'><div class='top'><div class='brand'><div class='mark'>G+</div><div><p>Unofficial portal for Gakushuin University students</p><h1>G-Port+</h1></div></div><button id='themeBtn' class='theme' type='button' aria-label='テーマ切り替え'>🌙</button></div><nav class='nav'><a href='#home'>ホーム</a><a href='#links'>公式リンク</a><a href='#timetable'>時間割</a><a href='#assignments'>課題</a><a href='#memo'>メモ</a><a href='#guide'>使い方</a></nav><div class='hero' id='home'><div class='copy'><p class='ey'>学習院大学生のための毎日使える非公式ポータル</p><h2>今日やることを、開いてすぐ把握できる。</h2><p class='lead'>公式サービスへの最短導線、今日の授業、締切が近い課題、個人メモを一つにまとめた。ブラウザ保存型なので、ログインなしでも自分専用の大学ダッシュボードとして使える。</p><div class='acts'><a class='btn pri' href='#links'>公式リンクを見る</a><a class='btn sec' href='#guide'>最初の設定を見る</a></div></div><div class='stack'><article class='mini'><span>現在</span><strong id='dateNow'>読み込み中...</strong><small id='timeNow'>--:--</small></article><article class='mini'><span>次の授業</span><strong id='nextClass'>未登録</strong><small id='nextMeta'>時間割を保存すると表示</small></article><article class='mini'><span>締切が近い課題</span><strong id='urgentCount'>0件</strong><small id='urgentText'>課題を追加すると表示</small></article></div></div></div></header><main><section><div class='c'><div class='sectionhead'><div><p class='tag'>Dashboard</p><h3>最初に見る画面</h3></div><button id='toTableBtn' class='btn sec' type='button'>時間割へ移動</button></div><div class='dash'><article class='card'><div class='cardhead'><div><h4>今日の授業</h4><p class='sub'>時間割から自動表示</p></div><span class='badge' id='todayBadge'>今日</span></div><div class='schedule' id='todayList'></div></article><article class='card'><div class='cardhead'><div><h4>直近の課題</h4><p class='sub'>締切が近い順</p></div><span class='badge'>Top 3</span></div><ul class='simple' id='dashTasks'></ul></article><article class='card'><div class='cardhead'><div><h4>よく使う操作</h4><p class='sub'>空きコマでも押しやすい</p></div><span class='badge'>Quick</span></div><div class='quick'><a href='#links'>公式リンク</a><a href='#assignments'>課題追加</a><a href='#timetable'>時間割編集</a><a href='#memo'>メモ</a></div></article></div></div></section><section id='links'><div class='c'><div class='sectionhead'><div><p class='tag'>Official Links</p><h3>本当に使う公式リンクだけまとめた</h3></div><input id='searchInput' class='search' type='search' placeholder='例：図書館 / Moodle / 証明書 / G-Port'></div><article class='card'><div class='cardhead'><div><h4>ピン留め</h4><p class='sub'>右上の☆で固定</p></div><button id='resetPinsBtn' class='btn sec' type='button'>ピンをリセット</button></div><div id='pins' class='pins'>まだピン留めされていません。</div></article><div id='chips' class='chips' style='margin:14px 0'></div><div id='linksGrid' class='links'></div></div></section><section id='timetable'><div class='c'><div class='sectionhead'><div><p class='tag'>Timetable</p><h3>自分専用の時間割を保存する</h3></div><div class='tools'><button id='saveTableBtn' class='btn pri' type='button'>保存</button><button id='resetTableBtn' class='btn sec' type='button'>初期化</button></div></div><article class='card'><p class='helper'>各マスに『授業名』『教室』『メモ』を改行で入力すると、今日の授業と次の授業へ自動反映される。</p><div class='tablewrap'><table class='tt'><thead><tr><th>時限</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th></tr></thead><tbody id='ttBody'></tbody></table></div></article></div></section><section id='assignments'><div class='c'><div class='sectionhead'><div><p class='tag'>Assignments</p><h3>締切忘れを防ぐ課題管理</h3></div><button id='clearDoneBtn' class='btn sec' type='button'>完了済みを整理</button></div><div class='two'><article class='card'><div class='cardhead'><div><h4>課題を追加</h4><p class='sub'>タイトルと締切だけでも登録可能</p></div></div><form id='taskForm' class='form'><label><span>課題名</span><input id='taskTitle' required placeholder='例：リアクションペーパー'></label><label><span>科目名</span><input id='taskCourse' placeholder='例：経営入門演習'></label><label><span>締切</span><input id='taskDue' type='datetime-local' required></label><label><span>優先度</span><select id='taskPrio'><option value='high'>高</option><option value='medium' selected>中</option><option value='low'>低</option></select></label><label class='full'><span>メモ</span><textarea id='taskMemo' rows='4' placeholder='提出先、持ち物、やることなど'></textarea></label><div class='full'><button class='btn pri' type='submit'>追加する</button></div></form></article><article class='card'><div class='cardhead'><div><h4>登録済み課題</h4><p class='sub'>締切順に自動整列</p></div><div class='filters'><button class='btn sec f on' data-f='all' type='button'>すべて</button><button class='btn sec f' data-f='open' type='button'>未完了</button><button class='btn sec f' data-f='done' type='button'>完了</button></div></div><div id='taskStats' class='stats'></div><div id='taskList' class='alist'></div></article></div></div></section><section id='memo'><div class='c'><div class='sectionhead'><div><p class='tag'>Memo</p><h3>今日のメモ</h3></div><div class='tools'><button id='copyMemoBtn' class='btn sec' type='button'>メモをコピー</button><button id='clearMemoBtn' class='btn sec' type='button'>メモを消去</button></div></div><article class='card'><p class='helper'>書いた内容はこのブラウザに自動保存される。授業中の気付き、空きコマの予定、買うものメモにも使える。</p><textarea id='memoBox' class='memo' placeholder='例：&#10;・2限の前にレポート提出&#10;・図書館で参考文献を借りる&#10;・学食は12:00前に行く'></textarea><p id='memoState' class='saved'>未保存</p></article></div></section><section id='guide'><div class='c'><div class='sectionhead'><div><p class='tag'>Guide</p><h3>最初の3分で使い始める方法</h3></div></div><div class='guide'><article class='card'><div class='step'>1</div><h4>時間割を入れる</h4><p>まず授業名と教室だけでも入力して保存すると、今日の授業と次の授業が自動で表示される。</p></article><article class='card'><div class='step'>2</div><h4>よく使う公式リンクを☆で固定</h4><p>G-Port、シラバス、LMS、図書館など、自分がよく使うものを上に出せる。</p></article><article class='card'><div class='step'>3</div><h4>課題を締切順で入れる</h4><p>今日と明日の課題が目立つので、締切忘れを防ぎやすい。</p></article></div></div></section></main><div id='toast' class='toast'></div><footer class='foot'><div class='c'><p><strong>G-Port+</strong> は学習院大学の非公式学生ポータルである。リンク先の仕様変更があれば適宜更新すること。</p></div></footer><script>const DAYS=['月','火','水','木','金','土'],PERIODS=[['1','1限','09:00-10:30'],['2','2限','10:40-12:10'],['3','3限','13:00-14:30'],['4','4限','14:40-16:10'],['5','5限','16:20-17:50'],['6','6限','18:00-19:30']],LINKS=[{id:'gport',name:'G-Port',cat:'ポータル',url:'https://g-port.univ.gakushuin.ac.jp/campusweb_gk/top.do',desc:'大学ポータル。お知らせ、各種手続き、シラバス、LMSの入口。',tags:['履修','ログイン','ポータル']},{id:'syllabus',name:'シラバス検索',cat:'授業',url:'https://g-port.univ.gakushuin.ac.jp/campusweb_gk/slbssrch.do',desc:'授業名や担当者名からシラバスを確認。',tags:['授業','シラバス','履修']},{id:'calendar',name:'学年暦',cat:'授業',url:'https://www.univ.gakushuin.ac.jp/life/calendar/',desc:'授業期間、休講、試験期などを確認。',tags:['学年暦','試験','休講']},{id:'webclass',name:'WebClass',cat:'LMS',url:'https://webclass.gakushuin.ac.jp/',desc:'授業資料、課題、小テストなどで使われるLMS。',tags:['WebClass','課題','LMS']},{id:'moodle',name:'Moodle',cat:'LMS',url:'https://moodle.univ.gakushuin.ac.jp/',desc:'授業資料や提出物で使われる学習支援システム。',tags:['Moodle','LMS','授業']},{id:'manaba',name:'manaba',cat:'LMS',url:'https://univ-gakushuin.manaba.jp/ct/login',desc:'一部授業で利用される学習管理システム。',tags:['manaba','LMS','授業']},{id:'mail',name:'Web Mail',cat:'連絡',url:'https://www-cc.gakushuin.ac.jp/webmail/webmail.html',desc:'大学メールの利用入口。重要連絡の確認用。',tags:['メール','連絡','大学アカウント']},{id:'library',name:'学習院大学図書館',cat:'図書館',url:'https://www.gakushuin.ac.jp/univ/glim/',desc:'図書館トップ。開館情報や各種サービスの入口。',tags:['図書館','予約','学習室']},{id:'career',name:'キャリア・就職',cat:'学生生活',url:'https://www.univ.gakushuin.ac.jp/career/',desc:'キャリアセンター、就活支援、セミナー情報。',tags:['就活','インターン','キャリア']},{id:'cert',name:'在学生の証明書発行',cat:'手続き',url:'https://www.univ.gakushuin.ac.jp/life/issue/undergraduate/',desc:'在学証明書など各種証明書の発行案内。',tags:['証明書','手続き','申請']},{id:'health',name:'保健センター',cat:'支援',url:'https://www.univ.gakushuin.ac.jp/life/healthcenter/',desc:'健康相談、健康診断、応急処置など。',tags:['保健','健康','相談']},{id:'contact',name:'大学お問い合わせ',cat:'手続き',url:'https://www.univ.gakushuin.ac.jp/contact/',desc:'教務・履修・学籍・窓口の案内。',tags:['教務','窓口','問い合わせ']}],KEY={tt:'gpp-tt',tasks:'gpp-tasks',memo:'gpp-memo',pins:'gpp-pins',filter:'gpp-filter',theme:'gpp-theme',cat:'gpp-cat'},$=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s),JDAY=['日','月','火','水','木','金','土'];function load(k,f){try{const v=localStorage.getItem(k);return v?JSON.parse(v):f}catch{return f}}function save(k,v){localStorage.setItem(k,JSON.stringify(v))}function msg(t){const o=$('#toast');o.textContent=t;o.classList.add('show');clearTimeout(window.__tm);window.__tm=setTimeout(()=>o.classList.remove('show'),1800)}function esc(s){return String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#39;')}function tt0(){const d={};DAYS.forEach(x=>{d[x]={};PERIODS.forEach(([k])=>d[x][k]='')});return d}function tt(){return load(KEY.tt,tt0())}function renderTT(){const data=tt(),tb=$('#ttBody');tb.innerHTML='';PERIODS.forEach(([k,l,t])=>{const tr=document.createElement('tr');tr.innerHTML=`<td><div class='period'><strong>${l}</strong><span>${t}</span></div></td>`;DAYS.forEach(day=>{const td=document.createElement('td');const ta=document.createElement('textarea');ta.dataset.day=day;ta.dataset.period=k;ta.placeholder='授業名\n教室\nメモ';ta.value=data[day][k]||'';td.appendChild(ta);tr.appendChild(td)});tb.appendChild(tr)})}function saveTT(){const out=tt0();$$('#ttBody textarea').forEach(t=>out[t.dataset.day][t.dataset.period]=t.value.trim());save(KEY.tt,out);renderToday();msg('時間割を保存しました')}function resetTT(){if(!confirm('時間割を初期化しますか？'))return;save(KEY.tt,tt0());renderTT();renderToday();msg('時間割を初期化しました')}function now(){const d=new Date();return{d,day:JDAY[d.getDay()],mins:d.getHours()*60+d.getMinutes(),classDay:DAYS.includes(JDAY[d.getDay()])}}function range(x){const[a,b]=x.split('-'),[sh,sm]=a.split(':').map(Number),[eh,em]=b.split(':').map(Number);return[sh*60+sm,eh*60+em]}function todayClasses(){const n=now();if(!n.classDay)return[];const data=tt();return PERIODS.map(([k,l,t])=>{const[r,e]=range(t);return{label:l,time:t,start:r,end:e,val:(data[n.day][k]||'').trim()}}).filter(x=>x.val)}function renderClock(){const n=now();$('#dateNow').textContent=`${n.d.getFullYear()}年${n.d.getMonth()+1}月${n.d.getDate()}日（${n.day}）`;$('#timeNow').textContent=n.d.toLocaleTimeString('ja-JP',{hour:'2-digit',minute:'2-digit'})}function renderToday(){const n=now(),list=todayClasses(),box=$('#todayList');$('#todayBadge').textContent=`${n.day}曜日`;box.innerHTML='';if(!n.classDay){box.innerHTML='<div class=empty>今日は通常授業日ではありません。</div>';$('#nextClass').textContent='通常授業なし';$('#nextMeta').textContent='休日のため表示なし';return}if(!list.length){box.innerHTML='<div class=empty>今日の授業は未登録です。下の時間割に入力して保存すると表示されます。</div>';$('#nextClass').textContent='未登録';$('#nextMeta').textContent='時間割を保存すると表示';return}const nx=list.find(x=>n.mins<x.end);list.forEach(x=>{const lines=x.val.split('\n').filter(Boolean),title=lines[0]||x.val,detail=lines.slice(1).join(' / ')||'詳細メモなし';const el=document.createElement('div');el.className='row'+(n.mins>=x.start&&n.mins<=x.end?' current':'');el.innerHTML=`<div class=time>${x.label}<br><small>${x.time}</small></div><div><strong>${esc(title)}</strong><p>${esc(detail)}</p></div>`;box.appendChild(el)});if(nx){const lines=nx.val.split('\n').filter(Boolean);$('#nextClass').textContent=lines[0]||nx.val;$('#nextMeta').textContent=`${nx.label} ${nx.time}${lines[1]?` / ${lines[1]}`:''}`}else{$('#nextClass').textContent='本日の授業は終了';$('#nextMeta').textContent='おつかれさまです'}}function tasks(){return load(KEY.tasks,[])}function saveTasks(v){save(KEY.tasks,v)}function sortT(v){return[...v].sort((a,b)=>new Date(a.due)-new Date(b.due))}function due(v){const d=new Date(v)-Date.now(),h=36e5,dy=24*h;if(d<0)return'期限超過';if(d<dy)return`あと${Math.max(1,Math.ceil(d/h))}時間`;return`あと${Math.ceil(d/dy)}日`}function fdt(v){const d=new Date(v);return d.toLocaleString('ja-JP',{month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'})}function renderStats(arr){const o=arr.filter(x=>!x.done).length,d=arr.filter(x=>x.done).length,u=arr.filter(x=>!x.done&&new Date(x.due)-Date.now()<=172800000).length;$('#taskStats').innerHTML=`<div class=badge>全体 ${arr.length}件</div><div class=badge>未完了 ${o}件</div><div class=badge>完了 ${d}件</div><div class=badge>48時間以内 ${u}件</div>`}function renderDash(arr){const top=sortT(arr).filter(x=>!x.done).slice(0,3),box=$('#dashTasks');box.innerHTML='';if(!top.length){box.innerHTML='<li><strong>まだ課題はありません</strong><span>下で追加するとここに表示されます。</span></li>';$('#urgentCount').textContent='0件';$('#urgentText').textContent='課題を追加すると表示';return}const urg=top.filter(x=>new Date(x.due)-Date.now()<=172800000);$('#urgentCount').textContent=`${urg.length}件`;$('#urgentText').textContent=urg.length?`${urg[0].title} など`:'差し迫った課題は少なめ';top.forEach(x=>{const li=document.createElement('li');li.innerHTML=`<strong>${esc(x.title)}</strong><span>${esc(x.course||'科目未入力')} / ${fdt(x.due)} / ${due(x.due)}</span>`;box.appendChild(li)})}function renderTasks(){const arr=sortT(tasks()),f=localStorage.getItem(KEY.filter)||'all';renderStats(arr);renderDash(arr);$$('.f').forEach(b=>b.classList.toggle('on',b.dataset.f===f));const box=$('#taskList');box.innerHTML='';const shown=arr.filter(x=>f==='all'||(f==='open'&&!x.done)||(f==='done'&&x.done));if(!shown.length){box.innerHTML='<div class=empty>表示中の課題はありません。</div>';return}shown.forEach(x=>{const el=document.createElement('article');el.className='item';el.innerHTML=`<div class=itop><div><h5>${esc(x.title)}</h5><div class=course>${esc(x.course||'科目未入力')}</div></div><div class=iact><span class='pbadge ${x.priority}'>優先度 ${x.priority==='high'?'高':x.priority==='low'?'低':'中'}</span><span class='sbadge ${x.done?'done':'open'}'>${x.done?'完了':'未完了'}</span></div></div><div class=meta><span>締切：${fdt(x.due)}</span><span>${due(x.due)}</span></div>${x.memo?`<p class=note>${esc(x.memo)}</p>`:''}<div class=iact style='margin-top:14px'><button class=mini2 data-a='toggle' data-id='${x.id}' type='button'>${x.done?'未完了に戻す':'完了にする'}</button><button class=mini2 data-a='delete' data-id='${x.id}' type='button'>削除</button></div>`;box.appendChild(el)})}function addTask(e){e.preventDefault();const title=$('#taskTitle').value.trim(),course=$('#taskCourse').value.trim(),duev=$('#taskDue').value,prio=$('#taskPrio').value,memo=$('#taskMemo').value.trim();if(!title||!duev)return;const arr=tasks();arr.push({id:String(Date.now()+Math.random()),title,course,due:duev,priority:prio,memo,done:false});saveTasks(arr);$('#taskForm').reset();renderTasks();msg('課題を追加しました')}function toggleTask(id){saveTasks(tasks().map(x=>x.id===id?{...x,done:!x.done}:x));renderTasks()}function deleteTask(id){if(!confirm('この課題を削除しますか？'))return;saveTasks(tasks().filter(x=>x.id!==id));renderTasks()}function clearDone(){saveTasks(tasks().filter(x=>!x.done));renderTasks();msg('完了済み課題を整理しました')}function pins(){return load(KEY.pins,[])}function savePins(v){save(KEY.pins,v)}function activeCat(){return localStorage.getItem(KEY.cat)||'すべて'}function renderChips(){const arr=['すべて',...new Set(LINKS.map(x=>x.cat))],box=$('#chips');box.innerHTML='';arr.forEach(cat=>{const b=document.createElement('button');b.className='chip'+(cat===activeCat()?' on':'');b.type='button';b.textContent=cat;b.onclick=()=>{localStorage.setItem(KEY.cat,cat);renderLinks()};box.appendChild(b)})}function renderLinks(){renderChips();const pin=pins(),kw=($('#searchInput').value||'').toLowerCase().trim(),cat=activeCat();const arr=LINKS.filter(x=>{const hit=!kw||`${x.name} ${x.desc} ${x.cat} ${x.tags.join(' ')}`.toLowerCase().includes(kw);return hit&&(cat==='すべて'||x.cat===cat)}),grid=$('#linksGrid');grid.innerHTML='';arr.forEach(x=>{const el=document.createElement('article');el.className='card lcard';el.innerHTML=`<div class=ltop><div><span class='cat badge'>${esc(x.cat)}</span><h4>${esc(x.name)}</h4></div><button class='star ${pin.includes(x.id)?'on':''}' type='button' data-pin='${x.id}'>${pin.includes(x.id)?'★':'☆'}</button></div><p class=desc>${esc(x.desc)}</p><div class=tags>${x.tags.map(t=>`<span class=tagi>${esc(t)}</span>`).join('')}</div><a class=open href='${x.url}' target='_blank' rel='noopener noreferrer'>開く</a>`;grid.appendChild(el)});const fixed=LINKS.filter(x=>pin.includes(x.id)),pbox=$('#pins');if(!fixed.length){pbox.textContent='まだピン留めされていません。';return}pbox.innerHTML='';fixed.forEach(x=>{const a=document.createElement('a');a.className='pin';a.href=x.url;a.target='_blank';a.rel='noopener noreferrer';a.textContent=x.name;pbox.appendChild(a)})}function pinToggle(id){const p=pins();savePins(p.includes(id)?p.filter(x=>x!==id):[...p,id]);renderLinks()}function loadMemo(){const v=localStorage.getItem(KEY.memo)||'';$('#memoBox').value=v;$('#memoState').textContent=v?'保存済み':'未入力'}function saveMemo(){localStorage.setItem(KEY.memo,$('#memoBox').value);$('#memoState').textContent=`保存済み ${new Date().toLocaleTimeString('ja-JP',{hour:'2-digit',minute:'2-digit'})}`}async function copyMemo(){try{await navigator.clipboard.writeText($('#memoBox').value);msg('メモをコピーしました')}catch{msg('コピーに失敗しました')}}function clearMemo(){if(!confirm('メモを消去しますか？'))return;$('#memoBox').value='';saveMemo();msg('メモを消去しました')}function applyTheme(){const t=localStorage.getItem(KEY.theme)||'dark';document.body.classList.toggle('light',t==='light');$('#themeBtn').textContent=t==='light'?'☀️':'🌙'}function toggleTheme(){localStorage.setItem(KEY.theme,document.body.classList.contains('light')?'dark':'light');applyTheme()}function init(){renderTT();renderClock();renderToday();renderLinks();renderTasks();loadMemo();applyTheme();$('#saveTableBtn').onclick=saveTT;$('#resetTableBtn').onclick=resetTT;$('#resetPinsBtn').onclick=()=>{savePins([]);renderLinks();msg('ピン留めをリセットしました')};$('#toTableBtn').onclick=()=>document.querySelector('#timetable').scrollIntoView({behavior:'smooth'});$('#searchInput').oninput=renderLinks;$('#taskForm').onsubmit=addTask;$('#clearDoneBtn').onclick=clearDone;$('#memoBox').oninput=saveMemo;$('#copyMemoBtn').onclick=copyMemo;$('#clearMemoBtn').onclick=clearMemo;$('#themeBtn').onclick=toggleTheme;$('#taskList').onclick=e=>{const b=e.target.closest('[data-a]');if(!b)return;b.dataset.a==='toggle'?toggleTask(b.dataset.id):deleteTask(b.dataset.id)};$('#linksGrid').onclick=e=>{const b=e.target.closest('[data-pin]');if(!b)return;pinToggle(b.dataset.pin)};$$('.f').forEach(b=>b.onclick=()=>{localStorage.setItem(KEY.filter,b.dataset.f);renderTasks()});setInterval(()=>{renderClock();renderToday()},60000)}init();</script></body></html>
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>学習院メモポータル</title>
+  <meta name="description" content="学習院大学生向けの非公式ポータル。G-Port、LMS、時間割、課題、メモをひとつにまとめた。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f4f6f8;
+      --paper:#ffffff;
+      --line:#d8dde5;
+      --text:#20262d;
+      --sub:#697483;
+      --navy:#1f3a5f;
+      --navy-soft:#edf3fb;
+      --blue:#2d6cdf;
+      --red:#cb5a5a;
+      --yellow:#c28b2c;
+      --green:#2d8f60;
+      --shadow:0 10px 24px rgba(15, 35, 60, 0.06);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:"Noto Sans JP",sans-serif;
+      color:var(--text);
+      background:
+        linear-gradient(180deg,#eef2f7 0,#f7f8fa 180px,var(--bg) 180px);
+    }
+    a{color:inherit;text-decoration:none}
+    button,input,textarea,select{font:inherit}
+    button{cursor:pointer}
+    .container{width:min(1140px,calc(100% - 28px));margin:0 auto}
+    .topline{
+      font-size:.87rem;color:var(--sub);
+      padding:12px 0 0;
+      display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap
+    }
+    .site-head{
+      margin-top:12px;
+      background:var(--paper);
+      border:1px solid var(--line);
+      border-radius:24px;
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+    .site-head-inner{
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:0;
+    }
+    .brand-col{
+      padding:28px 28px 24px;
+      border-right:1px solid var(--line);
+    }
+    .brand-row{display:flex;align-items:flex-start;gap:16px}
+    .logo{
+      width:62px;height:62px;border-radius:16px;
+      background:var(--navy);color:#fff;
+      display:grid;place-items:center;
+      font-weight:800;font-size:1.2rem;letter-spacing:.04em;
+    }
+    h1{
+      margin:0;
+      font-size:1.9rem;
+      letter-spacing:.01em;
+    }
+    .muted{color:var(--sub)}
+    .intro{
+      margin:16px 0 0;
+      line-height:1.85;
+      color:#495363;
+      max-width:56ch;
+      font-size:.98rem;
+    }
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+    .btn{
+      border-radius:12px;
+      min-height:44px;
+      padding:0 16px;
+      border:1px solid var(--line);
+      background:#fff;
+      color:var(--text);
+      font-weight:700;
+    }
+    .btn.primary{
+      background:var(--navy);
+      border-color:var(--navy);
+      color:#fff;
+    }
+    .btn.ghost{background:#fff}
+    .quick-notes{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:12px;
+      margin-top:22px;
+    }
+    .chip-box{
+      background:#fafbfc;border:1px solid var(--line);
+      border-radius:14px;padding:12px 14px;
+    }
+    .chip-box strong{display:block;font-size:.95rem}
+    .chip-box span{display:block;margin-top:4px;font-size:.84rem;color:var(--sub)}
+    .status-col{
+      padding:24px 24px 20px;
+      background:#fbfcfe;
+    }
+    .status-grid{
+      display:grid;
+      gap:12px;
+    }
+    .status-card{
+      border:1px solid var(--line);
+      background:#fff;
+      border-radius:16px;
+      padding:15px 16px;
+    }
+    .status-card .label{
+      font-size:.82rem;color:var(--sub)
+    }
+    .status-card strong{
+      display:block;
+      font-size:1.15rem;
+      margin-top:7px;
+    }
+    .status-card small{display:block;margin-top:6px;color:var(--sub)}
+    .nav{
+      display:flex;gap:18px;flex-wrap:wrap;
+      padding:14px 24px;
+      border-top:1px solid var(--line);
+      background:#fafbfc;
+      font-size:.95rem;
+    }
+    .nav a{color:#445062}
+    .layout{
+      display:grid;
+      grid-template-columns:320px minmax(0,1fr);
+      gap:18px;
+      margin-top:18px;
+      align-items:start;
+    }
+    .sidebar{
+      position:sticky;
+      top:12px;
+      display:grid;
+      gap:16px;
+    }
+    .panel{
+      background:var(--paper);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:18px;
+    }
+    .panel h2,.panel h3,.panel h4{margin:0}
+    .panel-title{
+      display:flex;align-items:center;justify-content:space-between;gap:10px;
+      margin-bottom:14px;
+    }
+    .panel-title h2,.panel-title h3{
+      font-size:1.02rem;
+    }
+    .tiny{
+      font-size:.82rem;color:var(--sub)
+    }
+    .today-list,.task-list,.link-grid,.guide-grid{display:grid;gap:12px}
+    .schedule-item{
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:12px 13px;
+      background:#fff;
+      display:grid;
+      grid-template-columns:80px 1fr;
+      gap:12px;
+    }
+    .schedule-item.current{
+      background:var(--navy-soft);
+      border-color:#b5c9ea;
+    }
+    .period{
+      font-weight:800;color:var(--navy)
+    }
+    .period small{
+      display:block;font-weight:500;color:var(--sub);margin-top:3px
+    }
+    .course-title{font-weight:700}
+    .course-meta,.item-sub{margin-top:4px;color:var(--sub);font-size:.9rem;line-height:1.6}
+    .simple-links{
+      display:grid;grid-template-columns:1fr 1fr;gap:10px
+    }
+    .simple-link{
+      border:1px solid var(--line);
+      background:#fff;
+      border-radius:12px;
+      min-height:48px;
+      display:flex;align-items:center;justify-content:center;
+      font-weight:700;
+    }
+    .main{
+      display:grid;
+      gap:18px;
+    }
+    .section{
+      background:var(--paper);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:22px;
+    }
+    .section-head{
+      display:flex;align-items:end;justify-content:space-between;gap:12px;flex-wrap:wrap;
+      margin-bottom:16px;
+    }
+    .section-head h2{
+      font-size:1.3rem;
+      margin:0;
+    }
+    .section-head p{
+      margin:6px 0 0;color:var(--sub);font-size:.92rem
+    }
+    .search{
+      width:min(360px,100%);
+      min-height:44px;
+      border-radius:12px;
+      border:1px solid var(--line);
+      padding:0 14px;
+      background:#fff;
+    }
+    .favorites{
+      border:1px dashed var(--line);
+      background:#fafbfd;
+      border-radius:14px;
+      padding:13px;
+      margin-bottom:14px;
+      min-height:60px;
+      display:flex;gap:10px;flex-wrap:wrap;align-items:center;
+    }
+    .fav-link{
+      padding:10px 12px;border-radius:999px;
+      background:#fff;border:1px solid var(--line);font-size:.92rem
+    }
+    .filters{display:flex;gap:10px;flex-wrap:wrap}
+    .filter-btn,.fav-btn,.mini-btn{
+      min-height:38px;padding:0 12px;border-radius:10px;
+      border:1px solid var(--line);background:#fff;color:var(--text)
+    }
+    .filter-btn.active{background:var(--navy);border-color:var(--navy);color:#fff}
+    .link-grid{
+      grid-template-columns:repeat(2,minmax(0,1fr));
+    }
+    .link-card{
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:15px;
+      background:#fff;
+      display:flex;flex-direction:column;gap:10px;
+      min-height:180px;
+    }
+    .link-top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+    .link-top h3{font-size:1rem;margin:0}
+    .pill{
+      display:inline-flex;align-items:center;
+      border-radius:999px;padding:5px 9px;
+      background:#f3f5f8;border:1px solid var(--line);
+      color:#566274;font-size:.8rem
+    }
+    .tags{display:flex;gap:8px;flex-wrap:wrap}
+    .tag{
+      font-size:.8rem;color:#667388;
+      padding:5px 8px;border-radius:999px;background:#f7f8fb;border:1px solid #e3e7ee
+    }
+    .link-open{
+      margin-top:auto;
+      border:1px solid var(--navy);
+      color:var(--navy);
+      border-radius:11px;
+      min-height:42px;
+      display:flex;align-items:center;justify-content:center;
+      font-weight:700;
+      background:#fff;
+    }
+    .link-open:hover,.simple-link:hover,.btn:hover,.mini-btn:hover,.fav-btn:hover{filter:brightness(.98)}
+    .table-wrap{overflow:auto;border:1px solid var(--line);border-radius:16px}
+    table{
+      width:100%;
+      min-width:860px;
+      border-collapse:collapse;
+      background:#fff;
+    }
+    th,td{border-bottom:1px solid var(--line);border-right:1px solid var(--line);vertical-align:top}
+    th:last-child,td:last-child{border-right:none}
+    th{
+      background:#f6f8fb;
+      padding:13px 10px;
+      font-size:.92rem;
+    }
+    td.timecell{
+      width:110px;padding:12px 10px;background:#fcfdff
+    }
+    td.timecell strong{display:block}
+    td.timecell span{font-size:.84rem;color:var(--sub)}
+    td textarea{
+      width:100%;
+      min-height:96px;
+      border:none;
+      resize:vertical;
+      padding:12px;
+      outline:none;
+      background:transparent;
+      color:var(--text);
+      line-height:1.55;
+    }
+    .save-row{display:flex;gap:10px;flex-wrap:wrap}
+    .tasks-wrap{
+      display:grid;
+      grid-template-columns:380px minmax(0,1fr);
+      gap:16px;
+      align-items:start;
+    }
+    .form-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:12px;
+    }
+    .form-grid label{display:grid;gap:7px}
+    .form-grid input,.form-grid textarea,.form-grid select{
+      border:1px solid var(--line);
+      border-radius:12px;
+      padding:12px 13px;
+      background:#fff;
+      color:var(--text);
+    }
+    .form-grid .full{grid-column:1/-1}
+    .stats{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}
+    .stat{
+      padding:8px 11px;border-radius:999px;background:#f3f6fa;border:1px solid var(--line);font-size:.86rem
+    }
+    .task-item{
+      border:1px solid var(--line);
+      border-radius:15px;
+      padding:14px;
+      background:#fff;
+    }
+    .task-top,.task-actions,.task-meta{
+      display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap
+    }
+    .task-top h3{margin:0;font-size:1rem}
+    .priority.high{color:var(--red)}
+    .priority.medium{color:var(--yellow)}
+    .priority.low{color:var(--green)}
+    .state.done{color:var(--green)}
+    .state.open{color:var(--navy)}
+    .task-note{
+      margin-top:10px;
+      color:#4f5968;
+      white-space:pre-wrap;
+      line-height:1.7;
+    }
+    .memo-box{
+      min-height:240px;
+      width:100%;
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:14px;
+      resize:vertical;
+      line-height:1.8;
+      background:#fffefc;
+    }
+    .memo-status{margin-top:10px;color:var(--sub);font-size:.88rem}
+    .guide-grid{
+      grid-template-columns:repeat(3,minmax(0,1fr));
+    }
+    .guide-card{
+      border:1px solid var(--line);
+      border-radius:15px;
+      padding:16px;
+      background:#fff;
+    }
+    .guide-card b{
+      display:inline-grid;place-items:center;
+      width:34px;height:34px;border-radius:10px;
+      background:var(--navy);color:#fff;margin-bottom:10px;
+    }
+    .guide-card p{margin:0;color:var(--sub);line-height:1.75}
+    .footer{
+      color:var(--sub);
+      font-size:.9rem;
+      padding:18px 0 40px;
+    }
+    .empty{
+      border:1px dashed var(--line);
+      border-radius:14px;
+      padding:14px;
+      color:var(--sub);
+      background:#fbfcfd;
+    }
+    .toast{
+      position:fixed;right:16px;bottom:16px;
+      padding:12px 14px;border-radius:12px;
+      background:#1f2937;color:#fff;
+      font-size:.92rem;
+      opacity:0;transform:translateY(20px);
+      transition:.2s;
+      pointer-events:none;
+    }
+    .toast.show{opacity:1;transform:translateY(0)}
+    .mobile-nav{
+      display:none;
+    }
+    @media (max-width:980px){
+      .site-head-inner{grid-template-columns:1fr}
+      .brand-col{border-right:none;border-bottom:1px solid var(--line)}
+      .layout{grid-template-columns:1fr}
+      .sidebar{position:static}
+      .tasks-wrap,.guide-grid,.link-grid{grid-template-columns:1fr}
+      .quick-notes{grid-template-columns:1fr}
+    }
+    @media (max-width:720px){
+      .container{width:min(100% - 18px,1140px)}
+      .site-head{border-radius:18px}
+      .brand-col,.status-col,.section,.panel{padding:16px}
+      .hero-actions,.save-row,.filters{flex-direction:column}
+      .btn,.search,.filter-btn,.mini-btn{width:100%}
+      .simple-links{grid-template-columns:1fr 1fr}
+      .nav{display:none}
+      .mobile-nav{
+        position:sticky;bottom:10px;z-index:20;
+        width:min(100% - 18px,1140px);margin:0 auto 12px;
+        display:grid;grid-template-columns:repeat(4,1fr);gap:8px;
+        background:rgba(255,255,255,.92);backdrop-filter:blur(10px);
+        border:1px solid var(--line);border-radius:16px;padding:8px;
+        box-shadow:var(--shadow);
+      }
+      .mobile-nav a{
+        min-height:44px;border-radius:12px;
+        display:flex;align-items:center;justify-content:center;
+        font-size:.84rem;color:#4d5a6d;
+      }
+      .simple-links{gap:8px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="topline">
+      <span id="todayLine">読み込み中...</span>
+      <span>学習院大学 非公式ポータル</span>
+    </div>
+
+    <header class="site-head">
+      <div class="site-head-inner">
+        <div class="brand-col">
+          <div class="brand-row">
+            <div class="logo">GU</div>
+            <div>
+              <div class="muted" style="font-size:.9rem;">学生用まとめページ</div>
+              <h1>学習院メモポータル</h1>
+              <div class="muted" style="margin-top:4px;">よく使うものを上に置いた、シンプルな非公式ページ</div>
+            </div>
+          </div>
+
+          <p class="intro">
+            開いたときに最初に見たいものだけを上に置いている。  
+            G-PortやLMSにすぐ飛べて、時間割と課題も同じ場所で見られるようにしてある。
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#links">公式リンクを見る</a>
+            <a class="btn ghost" href="#assignments">課題を追加する</a>
+          </div>
+
+          <div class="quick-notes">
+            <div class="chip-box">
+              <strong>まず使う</strong>
+              <span>G-Port / WebClass / メール</span>
+            </div>
+            <div class="chip-box">
+              <strong>授業まわり</strong>
+              <span>時間割 / シラバス / 学年暦</span>
+            </div>
+            <div class="chip-box">
+              <strong>日常用</strong>
+              <span>課題メモ / 図書館 / 証明書</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="status-col">
+          <div class="status-grid">
+            <div class="status-card">
+              <div class="label">現在</div>
+              <strong id="nowDate">--</strong>
+              <small id="nowTime">--:--</small>
+            </div>
+            <div class="status-card">
+              <div class="label">次の授業</div>
+              <strong id="nextClassTitle">未登録</strong>
+              <small id="nextClassMeta">時間割を保存すると出ます</small>
+            </div>
+            <div class="status-card">
+              <div class="label">近い締切</div>
+              <strong id="urgentCount">0件</strong>
+              <small id="urgentText">課題を追加すると出ます</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#dashboard">今日の欄</a>
+        <a href="#links">公式リンク</a>
+        <a href="#timetable">時間割</a>
+        <a href="#assignments">課題</a>
+        <a href="#memo">メモ</a>
+        <a href="#guide">使い方</a>
+      </nav>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <section class="panel" id="dashboard">
+          <div class="panel-title">
+            <h2>今日の授業</h2>
+            <span class="tiny" id="todayBadge">今日</span>
+          </div>
+          <div id="todayList" class="today-list"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-title">
+            <h3>すぐ使う</h3>
+            <span class="tiny">固定</span>
+          </div>
+          <div class="simple-links">
+            <a class="simple-link" href="https://g-port.univ.gakushuin.ac.jp/campusweb_gk/top.do" target="_blank" rel="noopener noreferrer">G-Port</a>
+            <a class="simple-link" href="https://webclass.gakushuin.ac.jp/" target="_blank" rel="noopener noreferrer">WebClass</a>
+            <a class="simple-link" href="https://www-cc.gakushuin.ac.jp/webmail/webmail.html" target="_blank" rel="noopener noreferrer">大学メール</a>
+            <a class="simple-link" href="https://www.gakushuin.ac.jp/univ/glim/" target="_blank" rel="noopener noreferrer">図書館</a>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-title">
+            <h3>直近の課題</h3>
+            <span class="tiny">上から順</span>
+          </div>
+          <div id="sidebarTasks" class="task-list"></div>
+        </section>
+      </aside>
+
+      <main class="main">
+        <section class="section" id="links">
+          <div class="section-head">
+            <div>
+              <h2>公式リンク</h2>
+              <p>カテゴリで絞って、よく使うものは☆で上に固定できる。</p>
+            </div>
+            <input id="linkSearch" class="search" type="search" placeholder="図書館 / Moodle / 証明書 / G-Port など">
+          </div>
+
+          <div class="favorites" id="favoriteLinks">まだ固定したリンクはありません。</div>
+          <div class="filters" id="categoryFilters"></div>
+          <div class="link-grid" id="linkGrid"></div>
+        </section>
+
+        <section class="section" id="timetable">
+          <div class="section-head">
+            <div>
+              <h2>時間割</h2>
+              <p>授業名、教室、メモを改行で書くと、今日の欄と次の授業にも反映される。</p>
+            </div>
+            <div class="save-row">
+              <button class="btn primary" id="saveTimetableBtn" type="button">時間割を保存</button>
+              <button class="btn" id="resetTimetableBtn" type="button">初期化</button>
+            </div>
+          </div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>時限</th>
+                  <th>月</th>
+                  <th>火</th>
+                  <th>水</th>
+                  <th>木</th>
+                  <th>金</th>
+                  <th>土</th>
+                </tr>
+              </thead>
+              <tbody id="timetableBody"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="section" id="assignments">
+          <div class="section-head">
+            <div>
+              <h2>課題</h2>
+              <p>締切順に並ぶ。完了したら消さずにチェックだけ付けられる。</p>
+            </div>
+            <div class="save-row">
+              <button class="btn" id="clearDoneBtn" type="button">完了済みを整理</button>
+            </div>
+          </div>
+
+          <div class="tasks-wrap">
+            <div class="panel" style="box-shadow:none;padding:0;border:none;background:transparent">
+              <form id="taskForm" class="form-grid">
+                <label>
+                  <span>課題名</span>
+                  <input id="taskTitle" type="text" required placeholder="例：リアクションペーパー">
+                </label>
+                <label>
+                  <span>科目名</span>
+                  <input id="taskCourse" type="text" placeholder="例：経営入門演習">
+                </label>
+                <label>
+                  <span>締切</span>
+                  <input id="taskDue" type="datetime-local" required>
+                </label>
+                <label>
+                  <span>優先度</span>
+                  <select id="taskPriority">
+                    <option value="high">高</option>
+                    <option value="medium" selected>中</option>
+                    <option value="low">低</option>
+                  </select>
+                </label>
+                <label class="full">
+                  <span>メモ</span>
+                  <textarea id="taskMemo" rows="4" placeholder="提出先、持ち物、やることなど"></textarea>
+                </label>
+                <div class="full">
+                  <button class="btn primary" type="submit">追加する</button>
+                </div>
+              </form>
+            </div>
+
+            <div>
+              <div class="filters" style="margin-bottom:14px;">
+                <button class="filter-btn active" data-filter="all" type="button">すべて</button>
+                <button class="filter-btn" data-filter="open" type="button">未完了</button>
+                <button class="filter-btn" data-filter="done" type="button">完了</button>
+              </div>
+
+              <div class="stats" id="taskStats"></div>
+              <div class="task-list" id="taskList"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="memo">
+          <div class="section-head">
+            <div>
+              <h2>メモ</h2>
+              <p>授業中の走り書き、買うもの、空きコマでやること用。</p>
+            </div>
+            <div class="save-row">
+              <button class="btn" id="copyMemoBtn" type="button">コピー</button>
+              <button class="btn" id="clearMemoBtn" type="button">消去</button>
+            </div>
+          </div>
+
+          <textarea id="memoBox" class="memo-box" placeholder="例：
+・3限までにリアペ提出
+・図書館で本を返す
+・学食は早めに行く"></textarea>
+          <div class="memo-status" id="memoStatus">未保存</div>
+        </section>
+
+        <section class="section" id="guide">
+          <div class="section-head">
+            <div>
+              <h2>使い方</h2>
+              <p>最初にやることだけ短くまとめてある。</p>
+            </div>
+          </div>
+
+          <div class="guide-grid">
+            <div class="guide-card">
+              <b>1</b>
+              <p>時間割に授業名を入れて保存する。これで今日の授業と次の授業が出る。</p>
+            </div>
+            <div class="guide-card">
+              <b>2</b>
+              <p>よく使うリンクを☆で固定する。上の固定欄だけ見れば済むようになる。</p>
+            </div>
+            <div class="guide-card">
+              <b>3</b>
+              <p>課題を締切順に入れておく。近いものだけ自動で上に来る。</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="mobile-nav">
+      <a href="#dashboard">今日</a>
+      <a href="#links">リンク</a>
+      <a href="#timetable">時間割</a>
+      <a href="#assignments">課題</a>
+    </div>
+
+    <footer class="footer">
+      学習院大学の非公式ページです。リンク先の仕様変更があれば適宜更新してください。
+    </footer>
+  </div>
+
+  <div id="toast" class="toast" aria-live="polite"></div>
+
+  <script>
+    const DAYS = ["月","火","水","木","金","土"];
+    const PERIODS = [
+      ["1","1限","09:00-10:30"],
+      ["2","2限","10:40-12:10"],
+      ["3","3限","13:00-14:30"],
+      ["4","4限","14:40-16:10"],
+      ["5","5限","16:20-17:50"],
+      ["6","6限","18:00-19:30"]
+    ];
+    const LINKS = [
+      {id:"gport",name:"G-Port",cat:"授業",url:"https://g-port.univ.gakushuin.ac.jp/campusweb_gk/top.do",desc:"大学ポータル。履修や各種案内の入口。",tags:["履修","ポータル"]},
+      {id:"syllabus",name:"シラバス検索",cat:"授業",url:"https://g-port.univ.gakushuin.ac.jp/campusweb_gk/slbssrch.do",desc:"授業名や担当者名から授業内容を確認。",tags:["授業","シラバス"]},
+      {id:"calendar",name:"学年暦",cat:"授業",url:"https://www.univ.gakushuin.ac.jp/life/calendar/",desc:"授業期間、休講、試験期などの確認用。",tags:["休講","試験"]},
+      {id:"webclass",name:"WebClass",cat:"LMS",url:"https://webclass.gakushuin.ac.jp/",desc:"資料配布や課題提出で使うことが多い。",tags:["課題","資料"]},
+      {id:"moodle",name:"Moodle",cat:"LMS",url:"https://moodle.univ.gakushuin.ac.jp/",desc:"授業によって使う学習支援システム。",tags:["LMS","授業"]},
+      {id:"manaba",name:"manaba",cat:"LMS",url:"https://univ-gakushuin.manaba.jp/ct/login",desc:"一部授業で使う。",tags:["LMS"]},
+      {id:"mail",name:"大学メール",cat:"連絡",url:"https://www-cc.gakushuin.ac.jp/webmail/webmail.html",desc:"教員や大学からの連絡確認用。",tags:["メール","連絡"]},
+      {id:"library",name:"図書館",cat:"生活",url:"https://www.gakushuin.ac.jp/univ/glim/",desc:"開館情報や各種サービスの入口。",tags:["図書館","学習"]},
+      {id:"career",name:"キャリア・就職",cat:"生活",url:"https://www.univ.gakushuin.ac.jp/career/",desc:"就活関係の案内。",tags:["就活","キャリア"]},
+      {id:"certificate",name:"証明書発行",cat:"手続き",url:"https://www.univ.gakushuin.ac.jp/life/issue/undergraduate/",desc:"在学証明書などの案内。",tags:["申請","証明書"]},
+      {id:"health",name:"保健センター",cat:"生活",url:"https://www.univ.gakushuin.ac.jp/life/healthcenter/",desc:"健康相談や健康診断関係。",tags:["健康","相談"]},
+      {id:"contact",name:"大学お問い合わせ",cat:"手続き",url:"https://www.univ.gakushuin.ac.jp/contact/",desc:"教務や窓口案内。",tags:["教務","窓口"]}
+    ];
+    const STORE = {
+      timetable:"gu_portal_timetable_v2",
+      tasks:"gu_portal_tasks_v2",
+      memo:"gu_portal_memo_v2",
+      favorites:"gu_portal_favorites_v2",
+      taskFilter:"gu_portal_task_filter_v2",
+      linkFilter:"gu_portal_link_filter_v2"
+    };
+
+    const $ = (selector) => document.querySelector(selector);
+    const $$ = (selector) => [...document.querySelectorAll(selector)];
+
+    function save(key, value){
+      localStorage.setItem(key, JSON.stringify(value));
+    }
+    function load(key, fallback){
+      try{
+        const raw = localStorage.getItem(key);
+        return raw ? JSON.parse(raw) : fallback;
+      }catch{
+        return fallback;
+      }
+    }
+    function escapeHtml(text){
+      return String(text)
+        .replaceAll("&","&amp;")
+        .replaceAll("<","&lt;")
+        .replaceAll(">","&gt;")
+        .replaceAll('"',"&quot;")
+        .replaceAll("'","&#39;");
+    }
+    function toast(text){
+      const box = $("#toast");
+      box.textContent = text;
+      box.classList.add("show");
+      clearTimeout(window.__toastTimer);
+      window.__toastTimer = setTimeout(()=> box.classList.remove("show"), 1800);
+    }
+
+    function defaultTimetable(){
+      const base = {};
+      DAYS.forEach(day=>{
+        base[day] = {};
+        PERIODS.forEach(([period]) => base[day][period] = "");
+      });
+      return base;
+    }
+
+    function getTodayInfo(){
+      const now = new Date();
+      const jpDays = ["日","月","火","水","木","金","土"];
+      const day = jpDays[now.getDay()];
+      return {
+        date: now,
+        day,
+        minutes: now.getHours() * 60 + now.getMinutes(),
+        isClassDay: DAYS.includes(day)
+      };
+    }
+
+    function parseRange(timeText){
+      const [start, end] = timeText.split("-");
+      const [sh, sm] = start.split(":").map(Number);
+      const [eh, em] = end.split(":").map(Number);
+      return [sh * 60 + sm, eh * 60 + em];
+    }
+
+    function loadTimetable(){
+      return load(STORE.timetable, defaultTimetable());
+    }
+
+    function renderClock(){
+      const info = getTodayInfo();
+      const d = info.date;
+      $("#todayLine").textContent = `${d.getFullYear()}年${d.getMonth()+1}月${d.getDate()}日（${info.day}）`;
+      $("#nowDate").textContent = `${d.getMonth()+1}/${d.getDate()}（${info.day}）`;
+      $("#nowTime").textContent = d.toLocaleTimeString("ja-JP",{hour:"2-digit",minute:"2-digit"});
+    }
+
+    function renderTimetable(){
+      const data = loadTimetable();
+      const tbody = $("#timetableBody");
+      tbody.innerHTML = "";
+      PERIODS.forEach(([key,label,time])=>{
+        const tr = document.createElement("tr");
+        tr.innerHTML = `<td class="timecell"><strong>${label}</strong><span>${time}</span></td>`;
+        DAYS.forEach(day=>{
+          const td = document.createElement("td");
+          const textarea = document.createElement("textarea");
+          textarea.dataset.day = day;
+          textarea.dataset.period = key;
+          textarea.placeholder = "授業名\n教室\nメモ";
+          textarea.value = data[day][key] || "";
+          td.appendChild(textarea);
+          tr.appendChild(td);
+        });
+        tbody.appendChild(tr);
+      });
+    }
+
+    function saveTimetable(){
+      const next = defaultTimetable();
+      $$("#timetableBody textarea").forEach(area=>{
+        next[area.dataset.day][area.dataset.period] = area.value.trim();
+      });
+      save(STORE.timetable, next);
+      renderTodayArea();
+      toast("時間割を保存しました");
+    }
+
+    function resetTimetable(){
+      if(!confirm("時間割を初期化しますか？")) return;
+      save(STORE.timetable, defaultTimetable());
+      renderTimetable();
+      renderTodayArea();
+      toast("時間割を初期化しました");
+    }
+
+    function todayClasses(){
+      const info = getTodayInfo();
+      if(!info.isClassDay) return [];
+      const data = loadTimetable();
+      return PERIODS.map(([key,label,time])=>{
+        const [start,end] = parseRange(time);
+        return {
+          key, label, time, start, end,
+          value: (data[info.day][key] || "").trim()
+        };
+      }).filter(item => item.value);
+    }
+
+    function renderTodayArea(){
+      const info = getTodayInfo();
+      $("#todayBadge").textContent = `${info.day}曜日`;
+      const list = $("#todayList");
+      list.innerHTML = "";
+      const classes = todayClasses();
+
+      if(!info.isClassDay){
+        list.innerHTML = `<div class="empty">今日は通常授業日ではありません。</div>`;
+        $("#nextClassTitle").textContent = "通常授業なし";
+        $("#nextClassMeta").textContent = "休日のため表示なし";
+        return;
+      }
+      if(!classes.length){
+        list.innerHTML = `<div class="empty">今日の授業は未登録です。時間割に入れて保存するとここに出ます。</div>`;
+        $("#nextClassTitle").textContent = "未登録";
+        $("#nextClassMeta").textContent = "時間割を保存すると出ます";
+        return;
+      }
+
+      const nextClass = classes.find(item => info.minutes < item.end);
+
+      classes.forEach(item=>{
+        const lines = item.value.split("\n").filter(Boolean);
+        const title = lines[0] || item.value;
+        const meta = lines.slice(1).join(" / ") || "詳細メモなし";
+        const div = document.createElement("div");
+        div.className = "schedule-item" + (info.minutes >= item.start && info.minutes <= item.end ? " current" : "");
+        div.innerHTML = `
+          <div class="period">${item.label}<small>${item.time}</small></div>
+          <div>
+            <div class="course-title">${escapeHtml(title)}</div>
+            <div class="course-meta">${escapeHtml(meta)}</div>
+          </div>
+        `;
+        list.appendChild(div);
+      });
+
+      if(nextClass){
+        const lines = nextClass.value.split("\n").filter(Boolean);
+        $("#nextClassTitle").textContent = lines[0] || nextClass.value;
+        $("#nextClassMeta").textContent = `${nextClass.label} ${nextClass.time}${lines[1] ? " / " + lines[1] : ""}`;
+      }else{
+        $("#nextClassTitle").textContent = "本日の授業は終了";
+        $("#nextClassMeta").textContent = "おつかれさまです";
+      }
+    }
+
+    function loadTasks(){
+      return load(STORE.tasks, []);
+    }
+    function saveTasks(tasks){
+      save(STORE.tasks, tasks);
+    }
+    function sortTasks(tasks){
+      return [...tasks].sort((a,b)=> new Date(a.due) - new Date(b.due));
+    }
+    function dueText(dateText){
+      const diff = new Date(dateText) - Date.now();
+      const hour = 1000 * 60 * 60;
+      const day = hour * 24;
+      if(diff < 0) return "期限超過";
+      if(diff < day) return `あと${Math.max(1, Math.ceil(diff / hour))}時間`;
+      return `あと${Math.ceil(diff / day)}日`;
+    }
+    function formatDate(dateText){
+      const d = new Date(dateText);
+      return d.toLocaleString("ja-JP",{month:"numeric",day:"numeric",hour:"2-digit",minute:"2-digit"});
+    }
+    function taskFilter(){
+      return localStorage.getItem(STORE.taskFilter) || "all";
+    }
+
+    function renderTaskSidebar(allTasks){
+      const box = $("#sidebarTasks");
+      box.innerHTML = "";
+      const top = sortTasks(allTasks).filter(task=>!task.done).slice(0,3);
+
+      if(!top.length){
+        box.innerHTML = `<div class="empty">未完了の課題はありません。</div>`;
+        $("#urgentCount").textContent = "0件";
+        $("#urgentText").textContent = "課題を追加すると出ます";
+        return;
+      }
+
+      const urgent = top.filter(task => new Date(task.due) - Date.now() <= 1000*60*60*24*2);
+      $("#urgentCount").textContent = `${urgent.length}件`;
+      $("#urgentText").textContent = urgent.length ? `${urgent[0].title} など` : "差し迫った課題は少なめ";
+
+      top.forEach(task=>{
+        const div = document.createElement("div");
+        div.className = "task-item";
+        div.innerHTML = `
+          <div class="task-top">
+            <h3>${escapeHtml(task.title)}</h3>
+            <span class="pill">${dueText(task.due)}</span>
+          </div>
+          <div class="item-sub">${escapeHtml(task.course || "科目未入力")} / ${formatDate(task.due)}</div>
+        `;
+        box.appendChild(div);
+      });
+    }
+
+    function renderTaskStats(tasks){
+      const open = tasks.filter(task=>!task.done).length;
+      const done = tasks.filter(task=>task.done).length;
+      const soon = tasks.filter(task=>!task.done && new Date(task.due)-Date.now() <= 1000*60*60*24*2).length;
+      $("#taskStats").innerHTML = `
+        <span class="stat">全体 ${tasks.length}件</span>
+        <span class="stat">未完了 ${open}件</span>
+        <span class="stat">完了 ${done}件</span>
+        <span class="stat">48時間以内 ${soon}件</span>
+      `;
+    }
+
+    function renderTasks(){
+      const all = sortTasks(loadTasks());
+      renderTaskSidebar(all);
+      renderTaskStats(all);
+
+      const currentFilter = taskFilter();
+      $$(".filter-btn[data-filter]").forEach(btn=>{
+        btn.classList.toggle("active", btn.dataset.filter === currentFilter);
+      });
+
+      const target = $("#taskList");
+      target.innerHTML = "";
+      const visible = all.filter(task=>{
+        if(currentFilter === "open") return !task.done;
+        if(currentFilter === "done") return task.done;
+        return true;
+      });
+
+      if(!visible.length){
+        target.innerHTML = `<div class="empty">表示中の課題はありません。</div>`;
+        return;
+      }
+
+      visible.forEach(task=>{
+        const article = document.createElement("article");
+        article.className = "task-item";
+        article.innerHTML = `
+          <div class="task-top">
+            <div>
+              <h3>${escapeHtml(task.title)}</h3>
+              <div class="item-sub">${escapeHtml(task.course || "科目未入力")}</div>
+            </div>
+            <div class="task-actions">
+              <span class="pill priority ${task.priority}">優先度 ${task.priority === "high" ? "高" : task.priority === "low" ? "低" : "中"}</span>
+              <span class="pill state ${task.done ? "done" : "open"}">${task.done ? "完了" : "未完了"}</span>
+            </div>
+          </div>
+          <div class="task-meta item-sub">
+            <span>締切：${formatDate(task.due)}</span>
+            <span>${dueText(task.due)}</span>
+          </div>
+          ${task.memo ? `<div class="task-note">${escapeHtml(task.memo)}</div>` : ""}
+          <div class="task-actions" style="margin-top:12px;">
+            <button class="mini-btn" data-action="toggle" data-id="${task.id}" type="button">${task.done ? "未完了に戻す" : "完了にする"}</button>
+            <button class="mini-btn" data-action="delete" data-id="${task.id}" type="button">削除</button>
+          </div>
+        `;
+        target.appendChild(article);
+      });
+    }
+
+    function addTask(event){
+      event.preventDefault();
+      const title = $("#taskTitle").value.trim();
+      const course = $("#taskCourse").value.trim();
+      const due = $("#taskDue").value;
+      const priority = $("#taskPriority").value;
+      const memo = $("#taskMemo").value.trim();
+      if(!title || !due) return;
+
+      const tasks = loadTasks();
+      tasks.push({
+        id: String(Date.now() + Math.random()),
+        title, course, due, priority, memo,
+        done:false
+      });
+      saveTasks(tasks);
+      $("#taskForm").reset();
+      renderTasks();
+      toast("課題を追加しました");
+    }
+
+    function toggleTask(id){
+      const next = loadTasks().map(task => task.id === id ? {...task, done: !task.done} : task);
+      saveTasks(next);
+      renderTasks();
+    }
+
+    function deleteTask(id){
+      if(!confirm("この課題を削除しますか？")) return;
+      saveTasks(loadTasks().filter(task => task.id !== id));
+      renderTasks();
+      toast("課題を削除しました");
+    }
+
+    function clearDoneTasks(){
+      saveTasks(loadTasks().filter(task => !task.done));
+      renderTasks();
+      toast("完了済みを整理しました");
+    }
+
+    function favoriteIds(){
+      return load(STORE.favorites, []);
+    }
+
+    function toggleFavorite(id){
+      const current = favoriteIds();
+      if(current.includes(id)){
+        save(STORE.favorites, current.filter(value => value !== id));
+      }else{
+        save(STORE.favorites, [...current, id]);
+      }
+      renderLinks();
+    }
+
+    function activeLinkCategory(){
+      return localStorage.getItem(STORE.linkFilter) || "すべて";
+    }
+
+    function renderLinkFilters(){
+      const filters = ["すべて", ...new Set(LINKS.map(link => link.cat))];
+      const box = $("#categoryFilters");
+      box.innerHTML = "";
+      filters.forEach(filter=>{
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "filter-btn" + (activeLinkCategory() === filter ? " active" : "");
+        button.textContent = filter;
+        button.onclick = () => {
+          localStorage.setItem(STORE.linkFilter, filter);
+          renderLinks();
+        };
+        box.appendChild(button);
+      });
+    }
+
+    function renderLinks(){
+      renderLinkFilters();
+      const search = ($("#linkSearch").value || "").toLowerCase().trim();
+      const category = activeLinkCategory();
+      const favs = favoriteIds();
+
+      const filtered = LINKS.filter(link=>{
+        const hay = `${link.name} ${link.cat} ${link.desc} ${link.tags.join(" ")}`.toLowerCase();
+        const matchText = !search || hay.includes(search);
+        const matchCat = category === "すべて" || link.cat === category;
+        return matchText && matchCat;
+      });
+
+      const grid = $("#linkGrid");
+      grid.innerHTML = "";
+
+      filtered.forEach(link=>{
+        const article = document.createElement("article");
+        article.className = "link-card";
+        article.innerHTML = `
+          <div class="link-top">
+            <div>
+              <span class="pill">${escapeHtml(link.cat)}</span>
+              <h3 style="margin-top:8px;">${escapeHtml(link.name)}</h3>
+            </div>
+            <button class="fav-btn" data-favorite="${link.id}" type="button">${favs.includes(link.id) ? "★" : "☆"}</button>
+          </div>
+          <div class="item-sub">${escapeHtml(link.desc)}</div>
+          <div class="tags">${link.tags.map(tag=>`<span class="tag">${escapeHtml(tag)}</span>`).join("")}</div>
+          <a class="link-open" href="${link.url}" target="_blank" rel="noopener noreferrer">開く</a>
+        `;
+        grid.appendChild(article);
+      });
+
+      const favoriteBox = $("#favoriteLinks");
+      const favoriteLinks = LINKS.filter(link => favs.includes(link.id));
+      if(!favoriteLinks.length){
+        favoriteBox.textContent = "まだ固定したリンクはありません。";
+      }else{
+        favoriteBox.innerHTML = favoriteLinks.map(link =>
+          `<a class="fav-link" href="${link.url}" target="_blank" rel="noopener noreferrer">${escapeHtml(link.name)}</a>`
+        ).join("");
+      }
+    }
+
+    function loadMemo(){
+      const memo = localStorage.getItem(STORE.memo) || "";
+      $("#memoBox").value = memo;
+      $("#memoStatus").textContent = memo ? "保存済み" : "未保存";
+    }
+
+    function saveMemo(){
+      localStorage.setItem(STORE.memo, $("#memoBox").value);
+      $("#memoStatus").textContent = `保存済み ${new Date().toLocaleTimeString("ja-JP",{hour:"2-digit",minute:"2-digit"})}`;
+    }
+
+    async function copyMemo(){
+      try{
+        await navigator.clipboard.writeText($("#memoBox").value);
+        toast("メモをコピーしました");
+      }catch{
+        toast("コピーできませんでした");
+      }
+    }
+
+    function clearMemo(){
+      if(!confirm("メモを消去しますか？")) return;
+      $("#memoBox").value = "";
+      saveMemo();
+      toast("メモを消去しました");
+    }
+
+    function bindEvents(){
+      $("#saveTimetableBtn").onclick = saveTimetable;
+      $("#resetTimetableBtn").onclick = resetTimetable;
+      $("#taskForm").onsubmit = addTask;
+      $("#clearDoneBtn").onclick = clearDoneTasks;
+      $("#linkSearch").oninput = renderLinks;
+      $("#memoBox").oninput = saveMemo;
+      $("#copyMemoBtn").onclick = copyMemo;
+      $("#clearMemoBtn").onclick = clearMemo;
+
+      $("#taskList").onclick = (event)=>{
+        const button = event.target.closest("[data-action]");
+        if(!button) return;
+        const id = button.dataset.id;
+        if(button.dataset.action === "toggle"){
+          toggleTask(id);
+        }else if(button.dataset.action === "delete"){
+          deleteTask(id);
+        }
+      };
+
+      $("#linkGrid").onclick = (event)=>{
+        const button = event.target.closest("[data-favorite]");
+        if(!button) return;
+        toggleFavorite(button.dataset.favorite);
+      };
+
+      $$(".filter-btn[data-filter]").forEach(button=>{
+        button.onclick = () => {
+          localStorage.setItem(STORE.taskFilter, button.dataset.filter);
+          renderTasks();
+        };
+      });
+    }
+
+    function init(){
+      renderClock();
+      renderTimetable();
+      renderTodayArea();
+      renderTasks();
+      renderLinks();
+      loadMemo();
+      bindEvents();
+      setInterval(()=>{
+        renderClock();
+        renderTodayArea();
+      }, 60000);
+    }
+
+    init();
+  </script>
+</body>
+</html>
